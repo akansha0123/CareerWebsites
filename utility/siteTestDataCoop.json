@@ -1,0 +1,25 @@
+[
+{
+"websiteURL" : "https://careers.g4s.com/en",
+"searchkeyword" : "Sales",
+"searchlocation" : "United Kingdom",
+"selectors" :{
+    "cookieAcceptbutton": "#onetrust-accept-btn-handler",
+    "searchKeyword": ".search-keyword",
+    "searchLocation": "input.search-location",
+    "searchButton": "[data-last-action='search-submit']"
+}
+}
+,
+{
+"websiteURL" : "https://coop-gst-2024.runmytests.com/",
+"searchkeyword" : "Manager",
+"searchlocation" : "United Kingdom",  
+"selectors" :{
+    "cookieAcceptbutton": "#system-ialert-button",
+    "searchKeyword": ".search-keyword",
+    "searchLocation": ".search-location",
+    "searchButton": "[data-last-action='search-submit']"
+}
+}
+]

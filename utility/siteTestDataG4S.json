@@ -1,0 +1,11 @@
+{
+"websiteURL" : "https://careers.g4s.com/en",
+"searchkeyword" : "Sales",
+"searchlocation" : "United Kingdom",
+"selectors" :{
+    "cookieAcceptbutton": "#onetrust-accept-btn-handler",
+    "searchKeyword": ".search-keyword",
+    "searchLocation": "input.search-location",
+    "searchButton": "[data-last-action='search-submit']"
+}
+}
