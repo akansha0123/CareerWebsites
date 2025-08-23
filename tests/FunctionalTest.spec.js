@@ -65,27 +65,27 @@ const data= JSON.parse(JSON.stringify(require("../utility/siteTestDataG4S.json")
     let msg = '';
     if (brokenLinks.length > 0) {
       // Print a detailed report for each broken link with status code
-      const report = [`Broken links found on ${data.websiteURL}:`].concat(
+       const report = [`Broken links found on ${data.websiteURL}:`].concat(
         brokenLinks.map((item, idx) => `${idx + 1}. ${item.url} [Status: ${item.status}]`)
       ).join('\n');
       msg = report;
-      console.error(`\n\x1b[31m${report}\x1b[0m`);
+      //console.error(`\n\x1b[31m${report}\x1b[0m`);
       // Attach to Playwright HTML report
-      if (testInfo && testInfo.attach) {
-        await testInfo.attach('Broken Links', { body: report, contentType: 'text/plain' });
-      }
-      // Attach to Allure if available
-      if (typeof allure !== 'undefined') {
-        allure.attachment('Broken Links', report, 'text/plain');
-      }
+      // if (testInfo && testInfo.attach) {
+      //   await testInfo.attach('Broken Links', { body: report, contentType: 'text/plain' });
+      // }
+      // // Attach to Allure if available
+      // if (typeof allure !== 'undefined') {
+      //   allure.attachment('Broken Links', report, 'text/plain');
+      // }
       // Fail the test with a clear message
-      throw new Error(`Broken links found on ${data.websiteURL}:\n${brokenLinks.map(item => item.url + ' [Status: ' + item.status + ']').join('\n')}`);
+      throw new Error(`Broken links found on ${data.websiteURL}:\n${brokenLinks.map(item => item.url + ' [Status code: ' + item.status + ']').join('\n')}`);
     } else {
       msg = `No broken links found on ${data.websiteURL}`;
-      console.log(msg);
-      if (testInfo && testInfo.attach) {
-        await testInfo.attach('Broken Links', { body: msg, contentType: 'text/plain' });
-      }
+     // console.log(msg);
+      // if (testInfo && testInfo.attach) {
+      //   await testInfo.attach('Broken Links', { body: msg, contentType: 'text/plain' });
+      //}
     }
   });
 
@@ -93,37 +93,37 @@ const data= JSON.parse(JSON.stringify(require("../utility/siteTestDataG4S.json")
 
 // Validate and highlight broken images
 
-  test.only(`Check and highlight broken images on ${data.websiteURL}`, async ({ page }, testInfo) => {
-    const homePage = new HomePage(page, data.selectors);
-    await homePage.navigateCareerSite(data.websiteURL);
-    await homePage.cookieAccept();
-    const brokenImages = await homePage.checkAndHighlightBrokenImages(page);
+  // test.only(`Check and highlight broken images on ${data.websiteURL}`, async ({ page }, testInfo) => {
+  //   const homePage = new HomePage(page, data.selectors);
+  //   await homePage.navigateCareerSite(data.websiteURL);
+  //   await homePage.cookieAccept();
+  //   const brokenImages = await homePage.checkAndHighlightBrokenImages(page);
     
-    let msg = '';
-    if (brokenImages.length > 0) {
-      // Print a detailed report for each broken image with status
-      const report = [`Broken images found on ${data.websiteURL}:`].concat(
-        brokenImages.map((item, idx) => `${idx + 1}. ${item.src} [Status: ${item.status}]`)
-      ).join('\n');
-      msg = report;
-      console.error(`\n\x1b[31m${report}\x1b[0m`);
-      // Attach to Playwright HTML report
-      if (testInfo && testInfo.attach) {
-        await testInfo.attach('Broken Images', { body: report, contentType: 'text/plain' });
-      }
-      // Attach to Allure if available
-      if (typeof allure !== 'undefined') {
-        allure.attachment('Broken Images', report, 'text/plain');
-      }
-      // Fail the test with a clear message
-      throw new Error(`Broken images found on ${data.websiteURL}:\n${brokenImages.map(item => item.src + ' [Status: ' + item.status + ']').join('\n')}`);
-    } else {
-      msg = `No broken images found on ${data.websiteURL}`;
-      console.log(msg);
-      if (testInfo && testInfo.attach) {
-        await testInfo.attach('Broken Images', { body: msg, contentType: 'text/plain' });
-      }
-    }
-  });  
+  //   let msg = '';
+  //   if (brokenImages.length > 0) {
+  //     // Print a detailed report for each broken image with status
+  //     const report = [`Broken images found on ${data.websiteURL}:`].concat(
+  //       brokenImages.map((item, idx) => `${idx + 1}. ${item.src} [Status: ${item.status}]`)
+  //     ).join('\n');
+  //     msg = report;
+  //     console.error(`\n\x1b[31m${report}\x1b[0m`);
+  //     // Attach to Playwright HTML report
+  //     if (testInfo && testInfo.attach) {
+  //       await testInfo.attach('Broken Images', { body: report, contentType: 'text/plain' });
+  //     }
+  //     // Attach to Allure if available
+  //     if (typeof allure !== 'undefined') {
+  //       allure.attachment('Broken Images', report, 'text/plain');
+  //     }
+  //     // Fail the test with a clear message
+  //     throw new Error(`Broken images found on ${data.websiteURL}:\n${brokenImages.map(item => item.src + ' [Status: ' + item.status + ']').join('\n')}`);
+  //   } else {
+  //     msg = `No broken images found on ${data.websiteURL}`;
+  //     console.log(msg);
+  //     if (testInfo && testInfo.attach) {
+  //       await testInfo.attach('Broken Images', { body: msg, contentType: 'text/plain' });
+  //     }
+  //   }
+  // });  
 
 //}

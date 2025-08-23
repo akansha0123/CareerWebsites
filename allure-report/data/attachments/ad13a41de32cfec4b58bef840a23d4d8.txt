@@ -1,2 +1,0 @@
-Broken images found on https://careers.g4s.com/en:
-1. undefined [Status: 400]

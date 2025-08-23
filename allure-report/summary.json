@@ -1,1 +1,1 @@
-{"name":"Allure Report","stats":{"total":1,"failed":1},"status":"failed","duration":5256,"createdAt":1755905526373,"plugin":"Awesome","newTests":[],"flakyTests":[],"retryTests":[]}
+{"name":"Allure Report","stats":{"total":4,"passed":3,"failed":1},"status":"failed","duration":10656,"createdAt":1755988742841,"plugin":"Awesome","newTests":[],"flakyTests":[],"retryTests":[]}
