@@ -1,5 +1,5 @@
 const {test, expect}= require('@playwright/test');
-const {HomePage} = require('../pageObjects/Homepage.js');
+const {HomePage} = require('../pageObjects/HomePage.js');
 const { validateFavicon, getMetaTitleAndDescription, highlightBrokenImages } = require('../helperclass/CommonFeatures.js');
 //JSON->String-> Javascript object
 
@@ -18,8 +18,8 @@ const data= JSON.parse(JSON.stringify(require("../utility/siteTestDataG4S.json")
     await homePage.cookieAccept();
     // await homePage.validSearch(data.searchkeyword, data.searchlocation);
     const url = await page.url();
-    const msg = `Launched site: ${url}`;
-    console.log(msg);
+    // const msg = `Launched site: ${url}`;
+    // console.log(msg);
     if (testInfo && testInfo.attach) {
       await testInfo.attach('Launch Site', { body: msg, contentType: 'text/plain' });
     }
@@ -35,8 +35,8 @@ const data= JSON.parse(JSON.stringify(require("../utility/siteTestDataG4S.json")
     await expect(async () => {
       await validateFavicon(page);
     }).not.toThrow();
-    msg = `Favicon is present on ${data.websiteURL}`;
-    console.log(msg);
+    // msg = `Favicon is present on ${data.websiteURL}`;
+    // console.log(msg);
     if (testInfo && testInfo.attach) {
       await testInfo.attach('Favicon', { body: msg, contentType: 'text/plain' });
     }
