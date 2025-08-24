@@ -1,6 +1,4 @@
 const {test, expect, selectors}= require('@playwright/test');
-  test.use({ storageState: { cookies: [], origins: [] } });
-
 const {HomePage} = require('../pageObjects/HomePage.js');
 const { validateFavicon, getMetaTitleAndDescription, highlightBrokenImages } = require('../helperclass/CommonFeatures.js');
 const { Console } = require('console');
@@ -14,6 +12,22 @@ const data= JSON.parse(JSON.stringify(require("../utility/siteTestDataG4S.json")
 //test.describe.configure({mode:'serial'});
 //for (const data of dataset) {
 
+//Validate Career site is launched
+  test(`Launch Career site ${data.websiteURL}`, async ({ page }, testInfo) => {
+    const homePage = new HomePage(page, data.selectors);
+    await homePage.navigateCareerSite(data.websiteURL);
+    await homePage.cookieAccept();
+    // await homePage.validSearch(data.searchkeyword, data.searchlocation);
+    const url = await page.url();
+    const msg = `Launched site: ${url}`;
+    console.log(msg);
+    if (testInfo && testInfo.attach) {
+      await testInfo.attach('Launch Site', { body: msg, contentType: 'text/plain' });
+    }
+    expect(url).toContain(data.websiteURL);
+  });
+
+
   // Validate favicon presence
   test(`Validate favicon on ${data.websiteURL}`, async ({ page }, testInfo) => {
 
@@ -23,8 +37,8 @@ const data= JSON.parse(JSON.stringify(require("../utility/siteTestDataG4S.json")
     await expect(async () => {
       await validateFavicon(page);
     }).not.toThrow();
-    msg = `Favicon is present on ${data.websiteURL}`;
-    console.log(msg);
+    // msg = `Favicon is present on ${data.websiteURL}`;
+    // console.log(msg);
     if (testInfo && testInfo.attach) {
       await testInfo.attach('Favicon', { body: msg, contentType: 'text/plain' });
     }
