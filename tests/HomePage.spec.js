@@ -1,14 +1,14 @@
 const {test, expect}= require('@playwright/test');
-//const {HomePage} = require('../pageObjects/HomePage.js');
+const {HomePage} = require('../pageObjects/HomePage.js');
 const { validateFavicon, getMetaTitleAndDescription } = require('../helperclass/CommonFeatures.js');
 //JSON->String-> Javascript object
 
-const dataset = JSON.parse(JSON.stringify(require("../utility/siteTestDataG4S.json")));
+const data = JSON.parse(JSON.stringify(require("../utility/siteTestDataCoop.json")));
 // convert JSON to javascript object
 
 //test.describe.configure({mode:'parallel'});
 test.describe.configure({mode:'serial'});
-for (const data of dataset) {
+//for (const data of dataset) {
 
   
   //Validate Career site is launched
@@ -55,4 +55,4 @@ for (const data of dataset) {
     expect(title, `Meta title should not be empty for ${data.websiteURL}`).not.toBe('');
     expect(description, `Meta description should not be empty for ${data.websiteURL}`).not.toBe('');
   });
-}
+//}

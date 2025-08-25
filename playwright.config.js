@@ -7,8 +7,8 @@ import { defineConfig, devices } from '@playwright/test';
 
 const config = ({
   testDir: './tests',
-  
- timeout: 40 *1000, // for entire project, each component can have its own timeou
+ // retries : 1,
+   timeout: 40 *1000, // for entire project, each component can have its own timeout
     expect : { // for assertion validation by default expect timeout gives 30 seconds if we want to overide it then need to write this line of code
     timeout : 20000,
   },

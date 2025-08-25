@@ -57,11 +57,10 @@ async function highlightBrokenImages(page) {
 					}
 				});
 			}, src);
-		}
 	}
+}
 	return brokenImages;
 }
-module.exports = {getMetaTitleAndDescription};
 
 /**
  * Validates if a favicon is present on the current page.
@@ -85,7 +84,10 @@ async function validateFavicon(page) {
 async function highlightBrokenLinks(page) {
 	// Get all anchor elements with href
 	const links = await page.$$eval('a[href]', els => els.map(el => el.href));
-	const brokenLinks = [];
+	//console.log('total links : +' + {links} +':\n');
+
+console.log(`total links found: ${links.length}\n${links.map((link, idx) => `${idx + 1}. ${link}`).join('\n')}`);
+const brokenLinks = [];
 	// Use Promise.all to parallelize requests for performance
 	await Promise.all(links.map(async (link) => {
 		// Ignore javascript:void(0) and mailto links
@@ -122,7 +124,8 @@ async function highlightBrokenLinks(page) {
 	return brokenLinks;
 }
 
-module.exports = { validateFavicon, highlightBrokenLinks };
+
+
 
 /**
  * Returns the meta title and meta description of the current page.
@@ -135,4 +138,16 @@ async function getMetaTitleAndDescription(page) {
 	return { title, description };
 }
 
-module.exports.getMetaTitleAndDescription = getMetaTitleAndDescription;
+
+
+// module.exports = {validateText};
+// module.exports = { validateFavicon, highlightBrokenLinks };
+// module.exports = {getMetaTitleAndDescription};
+// module.exports.getMetaTitleAndDescription = getMetaTitleAndDescription;
+
+module.exports = {
+    validateFavicon,
+    highlightBrokenLinks,
+    highlightBrokenImages,
+    getMetaTitleAndDescription
+};

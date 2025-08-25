@@ -1,1 +1,1 @@
-{"name":"Allure Report","stats":{"total":4,"passed":3,"failed":1},"status":"failed","duration":10656,"createdAt":1755988742841,"plugin":"Awesome","newTests":[],"flakyTests":[],"retryTests":[]}
+{"name":"Allure Report","stats":{"total":5,"passed":4,"new":1,"failed":1},"status":"failed","duration":24594,"createdAt":1756089536163,"plugin":"Awesome","newTests":[{"id":"9a65000a1b1516560343aa1be0aacf5c","name":"Validate Sitemap page is present on footer","status":"passed","duration":6533}],"flakyTests":[],"retryTests":[]}

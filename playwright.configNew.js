@@ -5,7 +5,7 @@ import { permission } from 'process';
 /**
  * @see https://playwright.dev/docs/test-configuration
  */
-const config = ({
+  const config = ({
   testDir: './tests',
   //retries : 1, // retry the test for 2 times, 
   workers : 3, // execute all test file at same time that's called as parallel mode, by default its 5 
