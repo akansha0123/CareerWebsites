@@ -4,6 +4,7 @@
 "sitemap" : "https://careers.g4s.com/en/sitemap",
 "searchkeyword" : "Sales",
 "searchlocation" : "United Kingdom",
+"sitemapText" : "Sitemap",
 "selectors" :{
     "cookieAcceptbutton": "#onetrust-accept-btn-handler",
     "searchKeyword": ".search-keyword",

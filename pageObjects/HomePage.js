@@ -59,6 +59,11 @@ constructor(page, selectors) {
         await this.page.click(selector);
     }
 
+    async getLinkHref (selector)
+    {
+        return await this.sitemap.getAttribute('href');
+       }
+    
    
 }
 

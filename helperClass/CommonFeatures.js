@@ -138,6 +138,14 @@ async function getMetaTitleAndDescription(page) {
 	return { title, description };
 }
 
+//  // Function to get href from a locator
+//   async function gethrefValue(selectors) {
+//    // const href = await locator.getAttribute('href');
+
+// 	const hrefValue = selectors.getAttribute('href');
+//     console.log('Link href:', hrefValue);
+//     return hrefValue;
+//   }
 
 
 // module.exports = {validateText};
@@ -149,5 +157,5 @@ module.exports = {
     validateFavicon,
     highlightBrokenLinks,
     highlightBrokenImages,
-    getMetaTitleAndDescription
+    getMetaTitleAndDescription,
 };

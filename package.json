@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "smoke": "npx playwright test",
+    "smokewithAllureReport": "npx playwright test --config playwright.config.js --reporter=allure-playwright",
     "SafariNewConfig" : "npx playwright test --config playwright.configNew.js --project=safari"
   },
   "keywords": [],

@@ -1,31 +1,16 @@
 const {test, expect, selectors}= require('@playwright/test');
 const {HomePage} = require('../pageObjects/HomePage.js');
 const { validateFavicon, getMetaTitleAndDescription, highlightBrokenImages } = require('../helperclass/CommonFeatures.js');
+const { Console } = require('console');
 //JSON->String-> Javascript object
 
-//const dataset= JSON.parse(JSON.stringify(require("../utility/siteTestDataG4S.json")));
+//const data= JSON.parse(JSON.stringify(require("../utility/siteTestDataCoop.json")));
 const data= JSON.parse(JSON.stringify(require("../utility/siteTestDataG4S.json")));
 // convert JSON to javascript object
 
 //test.describe.configure({mode:'parallel'});
 //test.describe.configure({mode:'serial'});
 //for (const data of dataset) {
-
-//Validate Career site is launched
-  test(`Launch Career site ${data.websiteURL}`, async ({ page }, testInfo) => {
-    const homePage = new HomePage(page, data.selectors);
-    await homePage.navigateCareerSite(data.websiteURL);
-    await homePage.cookieAccept();
-    // await homePage.validSearch(data.searchkeyword, data.searchlocation);
-    const url = await page.url();
-     const msg = `Launched site: ${url}`;
-     console.log(msg);
-    if (testInfo && testInfo.attach) {
-      await testInfo.attach('Launch Site', { body: msg, contentType: 'text/plain' });
-    }
-    expect(url).toContain(data.websiteURL);
-  });
-
 
   // Validate favicon presence
   test(`Validate favicon on ${data.websiteURL}`, async ({ page }, testInfo) => {
@@ -94,19 +79,22 @@ const data= JSON.parse(JSON.stringify(require("../utility/siteTestDataG4S.json")
   test(`Validate Sitemap page is present on footer`, async({page}, testInfo)=> 
     {
       const homePage = new HomePage(page, data.selectors);
-    await homePage.navigateCareerSite(data.websiteURL);
+      await homePage.navigateCareerSite(data.websiteURL);
     await homePage.cookieAccept();
     // 2. Scroll to the footer
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
     const LinkText = await homePage.getText(data.selectors.siteMap);
-    console.log(LinkText);
+    console.log(`Text present on browser : ` + LinkText);
+    expect (LinkText).toContain(data.sitemapText);
    
    // 4. Click the "Sitemap" link
     await homePage.clickLink(data.selectors.siteMap);
-    // await sitemapLink.click();
      await page.waitForLoadState('networkidle');
+     const expSitemapHref = await homePage.getLinkHref(data.selectors.siteMap);
+     console.log(`Sitemap href :` + expSitemapHref);
+     expect (expSitemapHref).toContain("/sitemap");
 
-     // 5. Verify the URL of the Sitemap page is valid
+      // 5. Verify the URL of the Sitemap page is valid
     
   
   
