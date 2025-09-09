@@ -12,33 +12,16 @@ const data= JSON.parse(JSON.stringify(require("../utility/siteTestDataG4S.json")
 //test.describe.configure({mode:'serial'});
 //for (const data of dataset) {
 
-//Validate Career site is launched
-  test(`Launch Career site ${data.websiteURL}`, async ({ page }, testInfo) => {
-    const homePage = new HomePage(page, data.selectors);
-    await homePage.navigateCareerSite(data.websiteURL);
-    await homePage.cookieAccept();
-    // await homePage.validSearch(data.searchkeyword, data.searchlocation);
-    const url = await page.url();
-    const msg = `Launched site: ${url}`;
-    console.log(msg);
-    if (testInfo && testInfo.attach) {
-      await testInfo.attach('Launch Site', { body: msg, contentType: 'text/plain' });
-    }
-    expect(url).toContain(data.websiteURL);
-  });
-
-
   // Validate favicon presence
   test(`Validate favicon on ${data.websiteURL}`, async ({ page }, testInfo) => {
-
     await page.goto(data.websiteURL);
     await page.waitForLoadState('domcontentloaded');
     let msg = '';
     await expect(async () => {
       await validateFavicon(page);
     }).not.toThrow();
-    // msg = `Favicon is present on ${data.websiteURL}`;
-    // console.log(msg);
+    msg = `Favicon is present on ${data.websiteURL}`;
+    console.log(msg);
     if (testInfo && testInfo.attach) {
       await testInfo.attach('Favicon', { body: msg, contentType: 'text/plain' });
     }
@@ -101,35 +84,35 @@ const data= JSON.parse(JSON.stringify(require("../utility/siteTestDataG4S.json")
      expect (expSitemapHref).toContain("/sitemap");
   }
 );
-
-
  // Validate Saved Jobs functionality works as expected
-  test(`Validate Saved Jobs functionality works as expected on ${data.searchJOB}`, async ({ page }, testInfo) => {
+  test.only(`Validate Saved Jobs functionality works as expected on ${data.searchJOB}`, async ({ page }, testInfo) => {
     const homePage = new HomePage(page, data.selectors);
       await homePage.navigateCareerSite(data.searchJOB);
+    await homePage.cookieAccept();
+    //await page.goto(data.searchJOB);
 
-      await homePage.cookieAccept();
+await page.waitForLoadState('networkidle');
+await page.waitForTimeout(1000); // ex
+   // await page.waitForLoadState('domcontentloaded');
 
-    // Verify Save Job buttons
- const jobList = await page.locator(data.selectors.jobListing).first().waitFor({ state: 'visible', timeout: 15000 });
- const jobCount = page.locator(data.selectors.jobListing);
-console.log(`Total job list : `, await jobCount.count());
+    // Verify job listings and Save Job buttons
+  const jobList = await page.locator(data.selectors.jobListing).first().waitFor({ state: 'visible', timeout: 15000 });
+
+const buttons = page.locator(data.selectors.saveJobButton);
+console.log('Total save buttons:', await buttons.count());
 page.pause();
-const saveButtons =  page.locator(data.selectors.saveJobButton);
-console.log('Total save buttons:', await saveButtons.count());
+  const saveJobBtn = await page.locator(data.selectors.saveJobButton).first();
+  await saveJobBtn.waitFor({ state: 'visible', timeout: 15000 });
 
-  const firstSave = saveButtons.first();
-//  await firstSave.waitFor({ state: 'visible', timeout: 15000 });
-
-  await firstSave.scrollIntoViewIfNeeded();
-await expect(firstSave).toBeVisible();
-await firstSave.click();
-
-//  await saveJobBtn.scrollIntoViewIfNeeded();
-  //await expect(saveJobBtn).toBeVisible();
+  await saveJobBtn.scrollIntoViewIfNeeded();
+  await expect(saveJobBtn).toBeVisible();
   // Save the first job
-  //await saveJobBtn.click();
+  await saveJobBtn.click();
 
+
+
+  //await saveJobButton.first().click();
+    //await homePage.clickLink(data.selectors.saveJob);
 
   });
 

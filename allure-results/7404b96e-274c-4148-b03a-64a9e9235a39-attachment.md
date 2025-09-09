@@ -1,0 +1,205 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#content"
+    - banner [ref=e4]:
+      - generic [ref=e7]:
+        - link "G4S Company Logo" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img "G4S Company Logo" [ref=e11] [cursor=pointer]
+        - generic [ref=e12]:
+          - list [ref=e16]:
+            - listitem [ref=e17]:
+              - button "About G4S" [ref=e18] [cursor=pointer]:
+                - generic [ref=e19] [cursor=pointer]: About G4S
+            - listitem [ref=e20]:
+              - button "Career Areas" [ref=e21] [cursor=pointer]:
+                - generic [ref=e22] [cursor=pointer]: Career Areas
+            - listitem [ref=e23]:
+              - button "Our Locations" [ref=e24] [cursor=pointer]:
+                - generic [ref=e25] [cursor=pointer]: Our Locations
+            - listitem [ref=e26]:
+              - button "Getting Hired" [ref=e27] [cursor=pointer]:
+                - generic [ref=e28] [cursor=pointer]: Getting Hired
+            - listitem [ref=e29]:
+              - link "Life at G4S" [ref=e30] [cursor=pointer]:
+                - /url: /en/life-at-g4s
+                - generic [ref=e31] [cursor=pointer]: Life at G4S
+          - link "Saved Jobs" [ref=e35] [cursor=pointer]:
+            - /url: /saved-jobs
+            - generic [ref=e36] [cursor=pointer]: Saved Jobs
+    - main [ref=e37]:
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - img "G4S employee smiling in security uniform" [ref=e44]
+          - heading "Search results" [level=1] [ref=e47]
+        - search [ref=e48]:
+          - group "Search Jobs" [ref=e49]:
+            - paragraph [ref=e50]:
+              - generic [ref=e51]: Search by keyword
+              - searchbox "Search by keyword" [ref=e52]
+            - paragraph [ref=e53]:
+              - generic [ref=e54]: Search by location
+              - combobox "Search by location" [ref=e55]
+            - paragraph [ref=e56]:
+              - button [ref=e57] [cursor=pointer]
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - paragraph [ref=e62]:
+            - strong [ref=e64]: Sort
+            - combobox [ref=e65]:
+              - option "Relevancy" [selected]
+              - option "Date posted"
+              - option "Job title"
+              - option "Location"
+              - option "Distance"
+          - generic [ref=e66]:
+            - heading "560 jobs found" [level=2]
+            - generic [ref=e67]:
+              - list [ref=e68]:
+                - listitem [ref=e69]:
+                  - generic [ref=e71]: 560 jobs found
+                - listitem [ref=e72]:
+                  - 'link "Area Security Officer Location: Coleraine, Northern Ireland Job ID: 6568" [ref=e73] [cursor=pointer]':
+                    - /url: /en/job/coleraine/area-security-officer/3219/28843282944
+                    - heading "Area Security Officer" [level=3] [ref=e74] [cursor=pointer]
+                    - generic [ref=e75] [cursor=pointer]:
+                      - generic [ref=e77] [cursor=pointer]: "Location: Coleraine, Northern Ireland"
+                      - generic [ref=e79] [cursor=pointer]: "Job ID: 6568"
+                - listitem [ref=e80]:
+                  - 'link "Retail Security Officer Location: Dublin, Leinster Job ID: 6638" [ref=e81] [cursor=pointer]':
+                    - /url: /en/job/dublin/retail-security-officer/3219/29064941376
+                    - heading "Retail Security Officer" [level=3] [ref=e82] [cursor=pointer]
+                    - generic [ref=e83] [cursor=pointer]:
+                      - generic [ref=e85] [cursor=pointer]: "Location: Dublin, Leinster"
+                      - generic [ref=e87] [cursor=pointer]: "Job ID: 6638"
+                - listitem [ref=e88]:
+                  - 'link "Front of House Security Officer Location: Dublin, Leinster Job ID: 6637" [ref=e89] [cursor=pointer]':
+                    - /url: /en/job/dublin/front-of-house-security-officer/3219/29064941312
+                    - heading "Front of House Security Officer" [level=3] [ref=e90] [cursor=pointer]
+                    - generic [ref=e91] [cursor=pointer]:
+                      - generic [ref=e93] [cursor=pointer]: "Location: Dublin, Leinster"
+                      - generic [ref=e95] [cursor=pointer]: "Job ID: 6637"
+                - listitem [ref=e96]:
+                  - 'link "Security Officer Location: Dublin, Leinster Job ID: 6636" [ref=e97] [cursor=pointer]':
+                    - /url: /en/job/dublin/security-officer/3219/29064941184
+                    - heading "Security Officer" [level=3] [ref=e98] [cursor=pointer]
+                    - generic [ref=e99] [cursor=pointer]:
+                      - generic [ref=e101] [cursor=pointer]: "Location: Dublin, Leinster"
+                      - generic [ref=e103] [cursor=pointer]: "Job ID: 6636"
+                - listitem [ref=e104]:
+                  - 'link "Area Security Officer - Co. Antrim Location: Lisburn, Northern Ireland Job ID: 518" [ref=e105] [cursor=pointer]':
+                    - /url: /en/job/lisburn/area-security-officer-co-antrim/3219/28933188544
+                    - heading "Area Security Officer - Co. Antrim" [level=3] [ref=e106] [cursor=pointer]
+                    - generic [ref=e107] [cursor=pointer]:
+                      - generic [ref=e109] [cursor=pointer]: "Location: Lisburn, Northern Ireland"
+                      - generic [ref=e111] [cursor=pointer]: "Job ID: 518"
+              - button "View More Jobs" [ref=e113] [cursor=pointer]
+              - heading "16 content results" [level=3] [ref=e114]
+              - list [ref=e115]:
+                - listitem [ref=e116]:
+                  - link "Hiring Tips And FAQs For Our Application Process Find out more about the G4S application process. To help you on your journey, we've put together the most commonly asked questions posed by our applicants." [ref=e117] [cursor=pointer]:
+                    - /url: /en/job-seeker-tips
+                    - heading "Hiring Tips And FAQs For Our Application Process" [level=3] [ref=e118] [cursor=pointer]
+                    - generic [ref=e120] [cursor=pointer]: Find out more about the G4S application process. To help you on your journey, we've put together the most commonly asked questions posed by our applicants.
+                - listitem [ref=e121]:
+                  - link "Learning & Career Development at G4S At G4S we strive to foster a culture of continuous development and encourage people at all levels to grow their skills and reach their full potential." [ref=e122] [cursor=pointer]:
+                    - /url: /en/learning-development
+                    - heading "Learning & Career Development at G4S" [level=3] [ref=e123] [cursor=pointer]
+                    - generic [ref=e125] [cursor=pointer]: At G4S we strive to foster a culture of continuous development and encourage people at all levels to grow their skills and reach their full potential.
+                - listitem [ref=e126]:
+                  - link "Health & Safety at G4S The safety and wellbeing of our employees is a core G4S value. Setting the highest standards for safety across our industry keeps our colleagues safe." [ref=e127] [cursor=pointer]:
+                    - /url: /en/health-safety
+                    - heading "Health & Safety at G4S" [level=3] [ref=e128] [cursor=pointer]
+                    - generic [ref=e130] [cursor=pointer]: The safety and wellbeing of our employees is a core G4S value. Setting the highest standards for safety across our industry keeps our colleagues safe.
+                - listitem [ref=e131]:
+                  - link "Culture & Belonging at G4S Investing in Culture & Belonging drives our success - enhancing career development, community safeguarding, and innovative solutions across our global team." [ref=e132] [cursor=pointer]:
+                    - /url: /en/culture-and-belonging
+                    - heading "Culture & Belonging at G4S" [level=3] [ref=e133] [cursor=pointer]
+                    - generic [ref=e135] [cursor=pointer]: Investing in Culture & Belonging drives our success - enhancing career development, community safeguarding, and innovative solutions across our global team.
+                - listitem [ref=e136]:
+                  - link "Explore G4S careers in UK & Ireland Discover exciting career opportunities at G4S in UK & Ireland. Search job openings, set up alerts and apply now to join a global leader in security." [ref=e137] [cursor=pointer]:
+                    - /url: /en/uk-ireland
+                    - heading "Explore G4S careers in UK & Ireland" [level=3] [ref=e138] [cursor=pointer]
+                    - generic [ref=e140] [cursor=pointer]: Discover exciting career opportunities at G4S in UK & Ireland. Search job openings, set up alerts and apply now to join a global leader in security.
+              - button "View More Content" [ref=e142] [cursor=pointer]
+        - region "Search Filter" [ref=e144]:
+          - generic [ref=e145]:
+            - heading "Filter results" [level=3] [ref=e147]
+            - generic [ref=e148]:
+              - generic [ref=e149]:
+                - generic:
+                  - generic: Use the field below to enter additional keywords to further refine your search results.
+                - strong [ref=e151]: Refine by keyword
+                - textbox "Refine by keyword" [ref=e152]
+              - button "Add" [ref=e154] [cursor=pointer]
+            - group "Category" [ref=e155]:
+              - button "Category" [ref=e156] [cursor=pointer]
+            - group "Country" [ref=e157]:
+              - button "Country" [ref=e158] [cursor=pointer]
+            - group "Region" [ref=e159]:
+              - button "Region" [ref=e160] [cursor=pointer]
+            - group "City" [ref=e161]:
+              - button "City" [ref=e162] [cursor=pointer]
+            - group "Department" [ref=e163]:
+              - button "Department" [ref=e164] [cursor=pointer]
+            - group "Feed Name" [ref=e165]:
+              - button "Feed Name" [ref=e166] [cursor=pointer]
+            - group "Job Type" [ref=e167]:
+              - button "Job Type" [ref=e168] [cursor=pointer]
+            - button "Reset all Filters" [ref=e170] [cursor=pointer]
+    - contentinfo [ref=e171]:
+      - generic [ref=e173]:
+        - generic [ref=e174]:
+          - generic:
+            - link "G4S Company Logo":
+              - /url: /
+              - img "G4S Company Logo"
+        - generic [ref=e175]:
+          - generic [ref=e176]:
+            - link "Privacy Policy" [ref=e177] [cursor=pointer]:
+              - /url: https://www.g4s.com/site-tools/privacy
+            - generic [ref=e178]: "|"
+            - link "Cookie Policy" [ref=e179] [cursor=pointer]:
+              - /url: https://www.g4s.com/site-tools/cookies-policy
+            - generic [ref=e180]: "|"
+            - link "Cookie Notice" [ref=e181] [cursor=pointer]:
+              - /url: /cookie-notice
+            - generic [ref=e182]: "|"
+            - link "Sitemap" [ref=e183] [cursor=pointer]:
+              - /url: /sitemap
+            - generic [ref=e184]: "|"
+            - link "G4S.com" [ref=e185] [cursor=pointer]:
+              - /url: https://www.g4s.com/
+          - paragraph [ref=e187]: © G4S Limited 2025. All Rights Reserved.
+        - generic [ref=e189]:
+          - paragraph: Follow Us
+          - list [ref=e190]:
+            - listitem [ref=e191]:
+              - link "Facebook" [ref=e192] [cursor=pointer]:
+                - /url: //www.facebook.com/G4S
+                - generic: Facebook
+            - listitem [ref=e193]:
+              - link "Instagram" [ref=e194] [cursor=pointer]:
+                - /url: //www.instagram.com/g4slimited/
+                - generic: Instagram
+            - listitem [ref=e195]:
+              - link "X" [ref=e196] [cursor=pointer]:
+                - /url: //www.twitter.com/g4s
+                - generic: X
+            - listitem [ref=e197]:
+              - link "LinkedIn" [ref=e198] [cursor=pointer]:
+                - /url: //www.linkedin.com/company/g4s
+                - generic: LinkedIn
+            - listitem [ref=e199]:
+              - link "YouTube" [ref=e200] [cursor=pointer]:
+                - /url: //www.youtube.com/@G4SGlobal
+                - generic: YouTube
+  - status
+  - generic [ref=e201] [cursor=pointer]:
+    - button "Cookies Settings" [ref=e203] [cursor=pointer]
+    - text: Cookies Settings
+```
