@@ -1,4 +1,6 @@
 const {test, expect, selectors}= require('@playwright/test');
+  test.use({ storageState: { cookies: [], origins: [] } });
+
 const {HomePage} = require('../pageObjects/HomePage.js');
 const { validateFavicon, getMetaTitleAndDescription, highlightBrokenImages } = require('../helperclass/CommonFeatures.js');
 const { Console } = require('console');
@@ -6,7 +8,7 @@ const { Console } = require('console');
 
 //const data= JSON.parse(JSON.stringify(require("../utility/siteTestDataCoop.json")));
 const data= JSON.parse(JSON.stringify(require("../utility/siteTestDataG4S.json")));
-// convert JSON to javascript object
+// convert JSON to javascript object : JSON.parse() to convert into Javascript object
 
 //test.describe.configure({mode:'parallel'});
 //test.describe.configure({mode:'serial'});
@@ -14,6 +16,7 @@ const data= JSON.parse(JSON.stringify(require("../utility/siteTestDataG4S.json")
 
   // Validate favicon presence
   test(`Validate favicon on ${data.websiteURL}`, async ({ page }, testInfo) => {
+
     await page.goto(data.websiteURL);
     await page.waitForLoadState('domcontentloaded');
     let msg = '';
@@ -32,12 +35,9 @@ const data= JSON.parse(JSON.stringify(require("../utility/siteTestDataG4S.json")
     await page.goto(data.websiteURL);
     await page.waitForLoadState('domcontentloaded');
     const { title, description } = await getMetaTitleAndDescription(page);
-    const msg = `Meta Title for ${data.websiteURL}: ${title}\nMeta Description for ${data.websiteURL}: ${description}`;
+    const msg = `Meta Title :  ${title}\nMeta Description : ${description}`;
     console.log(msg);
-    if (testInfo && testInfo.attach) {
-      await testInfo.attach('Meta Title & Description', { body: msg, contentType: 'text/plain' });
-    }
-    expect(title, `Meta title should not be empty for ${data.websiteURL}`).not.toBe('');
+       expect(title, `Meta title should not be empty for ${data.websiteURL}`).not.toBe('');
     expect(description, `Meta description should not be empty for ${data.websiteURL}`).not.toBe('');
   });
 
@@ -55,54 +55,70 @@ const data= JSON.parse(JSON.stringify(require("../utility/siteTestDataG4S.json")
         brokenLinks.map((item, idx) => `${idx + 1}. ${item.url} [Status: ${item.status}]`)
       ).join('\n');
       msg = report;
-      //console.error(`\n\x1b[31m${report}\x1b[0m`);
-      // Attach to Playwright HTML report
-      // if (testInfo && testInfo.attach) {
-      //   await testInfo.attach('Broken Links', { body: report, contentType: 'text/plain' });
-      // }
-      // // Attach to Allure if available
-      // if (typeof allure !== 'undefined') {
-      //   allure.attachment('Broken Links', report, 'text/plain');
-      // }
+
       // Fail the test with a clear message
       throw new Error(`Broken links found on ${data.websiteURL}:\n${brokenLinks.map(item => item.url + ' [Status code: ' + item.status + ']').join('\n')}`);
     } else {
       msg = `No broken links found on ${data.websiteURL}`;
-     // console.log(msg);
+      console.log(msg);
       // if (testInfo && testInfo.attach) {
       //   await testInfo.attach('Broken Links', { body: msg, contentType: 'text/plain' });
       //}
     }
   });
 
-  //Validate Sitemap Link is present in footer and its layout 
-  test(`Validate Sitemap page is present on footer`, async({page}, testInfo)=> 
+  //Validate Sitemap Link is present in footer and its layout
+  test(`Validate Sitemap page is present on footer`, async({page}, testInfo)=>
     {
       const homePage = new HomePage(page, data.selectors);
       await homePage.navigateCareerSite(data.websiteURL);
     await homePage.cookieAccept();
-    // 2. Scroll to the footer
-    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+    //Scroll to the footer
+    await page.evaluate(() => window.scrollTo(0, document.body.scrolslHeight));
     const LinkText = await homePage.getText(data.selectors.siteMap);
     console.log(`Text present on browser : ` + LinkText);
     expect (LinkText).toContain(data.sitemapText);
-   
-   // 4. Click the "Sitemap" link
+   //Click the "Sitemap" link
     await homePage.clickLink(data.selectors.siteMap);
      await page.waitForLoadState('networkidle');
      const expSitemapHref = await homePage.getLinkHref(data.selectors.siteMap);
      console.log(`Sitemap href :` + expSitemapHref);
+     //Verify the URL of the Sitemap page is valid
      expect (expSitemapHref).toContain("/sitemap");
-
-      // 5. Verify the URL of the Sitemap page is valid
-    
-  
-  
-  
   }
 );
 
-  
+
+ // Validate Saved Jobs functionality works as expected
+  test(`Validate Saved Jobs functionality works as expected on ${data.searchJOB}`, async ({ page }, testInfo) => {
+    const homePage = new HomePage(page, data.selectors);
+      await homePage.navigateCareerSite(data.searchJOB);
+
+      await homePage.cookieAccept();
+
+    // Verify Save Job buttons
+ const jobList = await page.locator(data.selectors.jobListing).first().waitFor({ state: 'visible', timeout: 15000 });
+ const jobCount = page.locator(data.selectors.jobListing);
+console.log(`Total job list : `, await jobCount.count());
+page.pause();
+const saveButtons =  page.locator(data.selectors.saveJobButton);
+console.log('Total save buttons:', await saveButtons.count());
+
+  const firstSave = saveButtons.first();
+//  await firstSave.waitFor({ state: 'visible', timeout: 15000 });
+
+  await firstSave.scrollIntoViewIfNeeded();
+await expect(firstSave).toBeVisible();
+await firstSave.click();
+
+//  await saveJobBtn.scrollIntoViewIfNeeded();
+  //await expect(saveJobBtn).toBeVisible();
+  // Save the first job
+  //await saveJobBtn.click();
+
+
+  });
+
 
 // Validate and highlight broken images
 
@@ -111,7 +127,7 @@ const data= JSON.parse(JSON.stringify(require("../utility/siteTestDataG4S.json")
   //   await homePage.navigateCareerSite(data.websiteURL);
   //   await homePage.cookieAccept();
   //   const brokenImages = await homePage.checkAndHighlightBrokenImages(page);
-    
+
   //   let msg = '';
   //   if (brokenImages.length > 0) {
   //     // Print a detailed report for each broken image with status
@@ -137,6 +153,6 @@ const data= JSON.parse(JSON.stringify(require("../utility/siteTestDataG4S.json")
   //       await testInfo.attach('Broken Images', { body: msg, contentType: 'text/plain' });
   //     }
   //   }
-  // });  
+  // });
 
 //}
