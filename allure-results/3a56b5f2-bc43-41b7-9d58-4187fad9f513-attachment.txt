@@ -1,0 +1,4 @@
+Cookie banner accepted ✅
+For entered location :  LoNDon + Message received : Please try again. Choose a location from the suggestions or clear the field to submit your search.
+For entered location :  123456 + Message received : Please try again. Choose a location from the suggestions or clear the field to submit your search.
+For entered location :  @#$%^&*() + Message received : Please try again. Choose a location from the suggestions or clear the field to submit your search.

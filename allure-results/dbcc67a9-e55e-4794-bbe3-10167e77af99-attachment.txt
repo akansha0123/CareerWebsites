@@ -1,0 +1,148 @@
+Iteration failed for keyword: Sales, location: United Kingdom
+locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('span.search-results__header') to be visible
+
+    at C:\TheCareerWebsites\tests\UserJourney.spec.js:112:24 {
+  name: 'TimeoutError',
+  [Symbol(step)]: {
+    location: {
+      file: 'C:\\TheCareerWebsites\\tests\\UserJourney.spec.js',
+      line: 112,
+      column: 24
+    },
+    category: 'pw:api',
+    title: "Wait for selector locator('span.search-results__header')",
+    apiName: 'locator.waitFor',
+    params: {
+      selector: 'span.search-results__header',
+      strict: true,
+      omitReturnValue: true,
+      state: 'visible',
+      timeout: 10000
+    },
+    group: undefined,
+    stepId: 'pw:api@44',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@44',
+      _title: "Wait for selector locator('span.search-results__header')",
+      _parentStep: undefined,
+      skip: [Function (anonymous)]
+    },
+    recoverFromStepError: [AsyncFunction: recoverFromStepError],
+    complete: [Function: complete],
+    endWallTime: 1757460189444,
+    error: {
+      message: 'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('span.search-results__header') to be visible\x1B[22m\n",
+      stack: 'TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('span.search-results__header') to be visible\x1B[22m\n" +
+        '\n' +
+        '    at C:\\TheCareerWebsites\\tests\\UserJourney.spec.js:112:24',
+      cause: undefined
+    }
+  }
+}
+Iteration failed for keyword: Manager, location: India
+locator.click: Test timeout of 25000ms exceeded.
+Call log:
+  - waiting for locator('#onetrust-accept-btn-handler')
+
+    at HomePage.cookieAccept (C:\TheCareerWebsites\pageObjects\HomePage.js:19:39)
+    at C:\TheCareerWebsites\tests\UserJourney.spec.js:104:20 {
+  [Symbol(step)]: {
+    location: {
+      file: 'C:\\TheCareerWebsites\\pageObjects\\HomePage.js',
+      line: 19,
+      column: 39,
+      function: 'HomePage.cookieAccept'
+    },
+    category: 'pw:api',
+    title: "Click locator('#onetrust-accept-btn-handler')",
+    apiName: 'locator.click',
+    params: {
+      selector: '#onetrust-accept-btn-handler',
+      strict: true,
+      timeout: 0
+    },
+    group: undefined,
+    stepId: 'pw:api@47',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@47',
+      _title: "Click locator('#onetrust-accept-btn-handler')",
+      _parentStep: undefined,
+      skip: [Function (anonymous)]
+    },
+    recoverFromStepError: [AsyncFunction: recoverFromStepError],
+    complete: [Function: complete],
+    endWallTime: 1757460203538,
+    error: {
+      message: 'Error: locator.click: Test timeout of 25000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('#onetrust-accept-btn-handler')\x1B[22m\n",
+      stack: 'Error: locator.click: Test timeout of 25000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('#onetrust-accept-btn-handler')\x1B[22m\n" +
+        '\n' +
+        '    at HomePage.cookieAccept (C:\\TheCareerWebsites\\pageObjects\\HomePage.js:19:39)\n' +
+        '    at C:\\TheCareerWebsites\\tests\\UserJourney.spec.js:104:20',
+      cause: undefined
+    }
+  }
+}
+Iteration failed for keyword: Engineer, location: Singapore
+page.goto: Target page, context or browser has been closed
+    at HomePage.navigateCareerSite (C:\TheCareerWebsites\pageObjects\HomePage.js:15:21)
+    at C:\TheCareerWebsites\tests\UserJourney.spec.js:103:20 {
+  [Symbol(step)]: {
+    location: {
+      file: 'C:\\TheCareerWebsites\\pageObjects\\HomePage.js',
+      line: 15,
+      column: 21,
+      function: 'HomePage.navigateCareerSite'
+    },
+    category: 'pw:api',
+    title: 'Navigate to "/en"',
+    apiName: 'page.goto',
+    params: {
+      url: 'https://careers.g4s.com/en',
+      waitUntil: 'load',
+      timeout: 0
+    },
+    group: undefined,
+    stepId: 'pw:api@52',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@52',
+      _title: 'Navigate to "/en"',
+      _parentStep: [TestStepInfoImpl],
+      skip: [Function (anonymous)]
+    },
+    recoverFromStepError: [AsyncFunction: recoverFromStepError],
+    complete: [Function: complete],
+    endWallTime: 1757460203544,
+    error: {
+      message: 'Error: page.goto: Target page, context or browser has been closed',
+      stack: 'Error: page.goto: Target page, context or browser has been closed\n' +
+        '    at HomePage.navigateCareerSite (C:\\TheCareerWebsites\\pageObjects\\HomePage.js:15:21)\n' +
+        '    at C:\\TheCareerWebsites\\tests\\UserJourney.spec.js:103:20',
+      cause: undefined
+    }
+  }
+}

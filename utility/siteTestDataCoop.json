@@ -3,13 +3,17 @@
 "searchJOB" : "https://coop-gst-2024.runmytests.com/search-jobs",
 "sitemap" : "https://coop-gst-2024.runmytests.com/sitemap",
 "searchkeyword" : "Manager",
-"searchlocation" : "United Kingdom",
-"sitemapText" : "Sitemap",  
+"searchlocation" : "Uni",
+"incorrectLocation": "arctic",
+"sitemapText" : "Sitemap",
 "selectors" :{
     "cookieAcceptbutton": "#system-ialert-button",
     "searchKeyword": ".search-keyword",
     "searchLocation": ".search-location",
-    "searchButton": "[data-last-action='search-submit']",
-    "siteMap": "[href='/sitemap']"
+    "locDropdown": ".mindreader-results",
+    "searchbutton": "[data-last-action='search-submit']",
+    "siteMap": "[href='/sitemap']",
+     "locError" : "p[aria-hidden='false']",
+    "locErrorMessage" : "Please try again. Choose a location from the suggestions or clear the field to submit your search."
 }
 }

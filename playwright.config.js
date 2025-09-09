@@ -7,18 +7,18 @@ import { defineConfig, devices } from '@playwright/test';
 
 const config = ({
   testDir: './tests',
- // retries : 1,
+  //retries : 1,
    timeout: 25 *1000, // for entire project, each component can have its own timeout
     expect : { // for assertion validation by default expect timeout gives 30 seconds if we want to overide it then need to write this line of code
     timeout : 20000,
   },
-  //reporter: 'html',
-   reporter: [['line'], ['allure-playwright']],
+  reporter: 'html',
+//  reporter: [['line'], ['allure-playwright']],
   use:{
     browserName : 'chromium', // default browser
   //browserName : 'webkit',
     headless: false, // run tests in headless mode
-    screenshot : 'only-on-failure', // take screenshot 
+    screenshot : 'only-on-failure', // take screenshot
     trace : 'retain-on-failure', // collect trace on failure
     video : 'retain-on-failure'
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */

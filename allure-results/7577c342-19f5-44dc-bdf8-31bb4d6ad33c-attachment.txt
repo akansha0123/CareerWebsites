@@ -1,0 +1,3 @@
+Cookie banner accepted ✅
+Text present on browser : Sitemap
+Sitemap href :/sitemap

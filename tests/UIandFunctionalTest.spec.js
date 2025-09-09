@@ -85,7 +85,7 @@ const data= JSON.parse(JSON.stringify(require("../utility/siteTestDataG4S.json")
   }
 );
  // Validate Saved Jobs functionality works as expected
-  test.only(`Validate Saved Jobs functionality works as expected on ${data.searchJOB}`, async ({ page }, testInfo) => {
+  test(`Validate Saved Jobs functionality works as expected on ${data.searchJOB}`, async ({ page }, testInfo) => {
     const homePage = new HomePage(page, data.selectors);
       await homePage.navigateCareerSite(data.searchJOB);
     await homePage.cookieAccept();

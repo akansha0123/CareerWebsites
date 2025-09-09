@@ -1,0 +1,12 @@
+Cookie banner accepted ✅
+Valid search keywords : Sales,  United Kingdom
+User landed on https://careers.g4s.com/en/search-jobs/Sales/United%20Kingdom/3072/1/2/2635167/54x75844/-2x69531/50/2
+Jobs found for keywords : Sales, United Kingdom
+Search Results : Sales jobs in United Kingdom
+Valid search keywords : Manager,  India
+User landed on https://careers.g4s.com/en/search-jobs/Manager/India/3072/1/2/1269750/22/79/50/2
+Jobs found for keywords : Manager, India
+Search Results : Manager jobs in India
+Valid search keywords : Engineer,  Singapore
+User landed on https://careers.g4s.com/en/search-jobs/Engineer/Singapore/3072/1/2/1880251/1x36667/103x8/50/2
+No jobs found for keywords:  Engineer , Singapore: Please try a different keyword/location combination or broaden your search criteria.
