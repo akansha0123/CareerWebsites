@@ -11,7 +11,9 @@
     "test:allure": "playwright test --reporter=allure-playwright",
     "allure:generate": "allure generate allure-results --clean",
     "generate:pdf": "node scripts/PDFconversions.js",
-    "test:full-report": "npm run test:allure && npm run allure:generate && npm run generate:pdf"
+    "test:full-report": "npm run test:allure && npm run allure:generate && npm run generate:pdf",
+    "postinstall": "npx playwright install --with-deps",
+    "test": "npx playwright test"
   },
   "keywords": [],
   "author": "",
