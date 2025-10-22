@@ -1,0 +1,7 @@
+{
+  "theme": "dark",
+  "styles": "styles/custom-dark.css",
+  "resultsDir": "allure-results",
+  "reportDir": "allure-report",
+  "clean": true
+}

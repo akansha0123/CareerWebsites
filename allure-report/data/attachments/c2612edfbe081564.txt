@@ -1,0 +1,2 @@
+Setting up test for: https://careers.unilever.com/working-at-unilever
+✅ Cookie banner accepted using: #onetrust-accept-btn-handler

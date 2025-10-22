@@ -7,13 +7,39 @@ import { defineConfig, devices } from '@playwright/test';
 
 const config = ({
   testDir: './tests',
-  //retries : 1,
-   timeout: 25 *1000, // for entire project, each component can have its own timeout
-    expect : { // for assertion validation by default expect timeout gives 30 seconds if we want to overide it then need to write this line of code
-    timeout : 20000,
+ // retries : 1,
+  //workers: 5, // Increase number of concurrent workers
+  //fullyParallel: true, // Enable full parallelization
+  timeout: 60000,  // Increase test timeout to 1 minute
+   expect : { // for assertion validation by default expect timeout gives 30 seconds if we want to overide it then need to write this line of code
+    timeout : 60000, // 60 seconds
   },
-  reporter: 'html',
-//  reporter: [['line'], ['allure-playwright']],
+  //reporter: 'html',
+ reporter: [
+    ['line'],
+    ['allure-playwright', {
+      detail: true,
+      outputFolder: 'allure-results',
+      suiteTitle: false,
+      categories: [
+        {
+          name: 'Test Defects',
+          messageRegex: '.*',
+          matchedStatuses: ['failed']
+        }
+      ],
+      reportName: 'Career Websites Test Report',
+      environmentInfo: {
+        Browser: 'Chromium',
+        Environment: 'Test',
+        Framework: 'Playwright'
+      },
+      allureConfig: './allure-config.json'  // Path relative to allure-results
+    }]
+  ],
+  attachments: {
+        "image/*": "image"  // This ensures images are properly embedded
+      },
   use:{
     browserName : 'chromium', // default browser
   //browserName : 'webkit',

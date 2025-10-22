@@ -1,0 +1,62 @@
+{
+   "urls": [
+        {
+            "name": "Working at Unilever",
+            "url": "https://careers.unilever.com/working-at-unilever"
+        },
+        {
+            "name": "Diversity and Inclusion",
+            "url": "https://careers.unilever.com/diversity-and-inclusion"
+        },
+        {
+            "name": "Benefits, Learning & Wellbeing",
+            "url": "https://careers.unilever.com/benefits-learning-wellbeing"
+        }
+    ],
+"websiteURL" : "https://www.unilever.com/careers/",
+"searchJOB" : "https://www.unilever.com/careers/search-jobs",
+"sitemap" : "https://www.unilever.com/careers/sitemap",
+"selectors" :{
+   "cookieAcceptbutton": ["#onetrust-accept-btn-handler", "#system-ialert-button"]
+},
+ "errorCodes": {
+        "clientErrors": {
+            "400": "Bad Request",
+            "401": "Unauthorized",
+            "402": "Payment Required",
+            "403": "Forbidden",
+            "404": "Not Found",
+            "405": "Method Not Allowed",
+            "406": "Not Acceptable",
+            "407": "Proxy Authentication Required",
+            "408": "Request Timeout",
+            "409": "Conflict"
+        },
+        "serverErrors": {
+            "500": "Internal Server Error",
+            "501": "Not Implemented",
+            "502": "Bad Gateway",
+            "503": "Service Unavailable",
+            "504": "Gateway Timeout"
+        }
+    },
+    "linkValidation": {
+        "batchSize": 5,
+        "timeout": 10000,
+        "errorStyles": {
+            "clientError": {
+                "borderColor": "#ff9800",
+                "backgroundColor": "#fff3e0"
+            },
+            "serverError": {
+                "borderColor": "#f44336",
+                "backgroundColor": "#ffebee"
+            },
+            "networkError": {
+                "borderColor": "#9c27b0",
+                "backgroundColor": "#f3e5f5"
+            }
+        }
+    }
+}
+

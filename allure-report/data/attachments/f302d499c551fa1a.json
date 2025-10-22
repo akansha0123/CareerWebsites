@@ -1,0 +1,350 @@
+{
+  "summary": {
+    "url": "https://careers.unilever.com/benefits-learning-wellbeing",
+    "totalLinks": 44,
+    "internalLinks": 24,
+    "externalLinks": 20,
+    "brokenLinks": 10,
+    "criticalErrors": 10
+  },
+  "internalLinks": [
+    {
+      "url": "https://careers.unilever.com/",
+      "status": 200,
+      "section": "header",
+      "text": "No text content"
+    },
+    {
+      "url": "https://careers.unilever.com/saved-jobs",
+      "status": 200,
+      "section": "header",
+      "text": "Saved jobs"
+    },
+    {
+      "url": "https://careers.unilever.com/benefits-learning-wellbeing#content",
+      "status": 200,
+      "section": "body",
+      "text": "Skip to main content"
+    },
+    {
+      "url": "https://careers.unilever.com/working-at-unilever",
+      "status": 200,
+      "section": "nav",
+      "text": "Working at Unilever"
+    },
+    {
+      "url": "https://careers.unilever.com/benefits-learning-wellbeing",
+      "status": 200,
+      "section": "nav",
+      "text": "Benefits, Learning & Wellbeing"
+    },
+    {
+      "url": "https://careers.unilever.com/diversity-and-inclusion",
+      "status": 200,
+      "section": "nav",
+      "text": "Equity, Diversity & Inclusion"
+    },
+    {
+      "url": "https://careers.unilever.com/uk",
+      "status": 200,
+      "section": "nav",
+      "text": "UK & I"
+    },
+    {
+      "url": "https://careers.unilever.com/united-states-and-canada",
+      "status": 200,
+      "section": "nav",
+      "text": "US & Canada"
+    },
+    {
+      "url": "https://careers.unilever.com/netherlands",
+      "status": 200,
+      "section": "nav",
+      "text": "Netherlands"
+    },
+    {
+      "url": "https://careers.unilever.com/our-locations",
+      "status": 200,
+      "section": "nav",
+      "text": "Our Locations"
+    },
+    {
+      "url": "https://careers.unilever.com/digital",
+      "status": 200,
+      "section": "nav",
+      "text": "Digital Careers"
+    },
+    {
+      "url": "https://careers.unilever.com/search-jobs",
+      "status": 200,
+      "section": "nav",
+      "text": "All our roles"
+    },
+    {
+      "url": "https://careers.unilever.com/india",
+      "status": 200,
+      "section": "nav",
+      "text": "India"
+    },
+    {
+      "url": "https://careers.unilever.com/experienced-careers",
+      "status": 200,
+      "section": "nav",
+      "text": "Experienced Careers"
+    },
+    {
+      "url": "https://careers.unilever.com/ufll",
+      "status": 200,
+      "section": "nav",
+      "text": "Unilever Future Leaders League"
+    },
+    {
+      "url": "https://careers.unilever.com/unilever-future-leaders-programme",
+      "status": 200,
+      "section": "nav",
+      "text": "Unilever Future Leaders Programme"
+    },
+    {
+      "url": "https://careers.unilever.com/early-careers-at-unilever",
+      "status": 200,
+      "section": "nav",
+      "text": "Global Early Careers"
+    },
+    {
+      "url": "https://careers.unilever.com/careersnewsletter",
+      "status": 200,
+      "section": "nav",
+      "text": "Careers Newsletter"
+    },
+    {
+      "url": "https://careers.unilever.com/working-at-unilever",
+      "status": 200,
+      "section": "main",
+      "text": "Learn more"
+    },
+    {
+      "url": "https://careers.unilever.com/experienced-careers",
+      "status": 200,
+      "section": "main",
+      "text": "Learn more"
+    },
+    {
+      "url": "https://careers.unilever.com/search-jobs",
+      "status": 200,
+      "section": "main",
+      "text": "Search jobs"
+    },
+    {
+      "url": "https://careers.unilever.com/marketing",
+      "status": 200,
+      "section": "main",
+      "text": "Learn more"
+    },
+    {
+      "url": "https://careers.unilever.com/sys/tc/sign-in?status=greeting&id=9c84466f-add2-453f-8792-4fe0c0d8a136&lang=en",
+      "status": 200,
+      "section": "main",
+      "text": "Already a member? Sign in"
+    },
+    {
+      "url": "https://careers.unilever.com/sitemap",
+      "status": 200,
+      "section": "footer",
+      "text": "Sitemap"
+    }
+  ],
+  "externalLinks": [
+    {
+      "url": "https://unilever.com/",
+      "status": 403,
+      "section": "header",
+      "text": "Visit Unilever.comopens in a new window"
+    },
+    {
+      "url": "https://unilever.wd3.myworkdayjobs.com/Unilever_Experienced_Professionals/userHome",
+      "status": 200,
+      "section": "header",
+      "text": "My applicationsopens in a new window"
+    },
+    {
+      "url": "https://www.unilever.com/planet-and-society/health-and-wellbeing",
+      "status": 403,
+      "section": "main",
+      "text": "Learn moreopens in a new window"
+    },
+    {
+      "url": "https://www.unilevernotices.com/privacy-notices/global-english.html",
+      "status": 200,
+      "section": "main",
+      "text": "privacy noticeopens in a new window"
+    },
+    {
+      "url": "https://www.facebook.com/UnileverCareers",
+      "status": 400,
+      "section": "main",
+      "text": "opens in a new window"
+    },
+    {
+      "url": "https://twitter.com/Unilever?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "status": 200,
+      "section": "main",
+      "text": "opens in a new window"
+    },
+    {
+      "url": "https://www.linkedin.com/company/unilever/",
+      "status": 200,
+      "section": "main",
+      "text": "opens in a new window"
+    },
+    {
+      "url": "https://www.unilever.com/contact/",
+      "status": 403,
+      "section": "main",
+      "text": "Contact usopens in a new window"
+    },
+    {
+      "url": "https://www.unilever.com/legal.html",
+      "status": 403,
+      "section": "footer",
+      "text": "Legal Noticeopens in a new window"
+    },
+    {
+      "url": "https://www.youtube.com/user/unilever",
+      "status": 200,
+      "section": "main",
+      "text": "opens in a new window"
+    },
+    {
+      "url": "https://www.instagram.com/unileverglobalcareers/",
+      "status": 200,
+      "section": "main",
+      "text": "opens in a new window"
+    },
+    {
+      "url": "https://www.unilevernotices.com/recruitment-notice/notice.html",
+      "status": 403,
+      "section": "footer",
+      "text": "Recruitment Privacy Noticeopens in a new window"
+    },
+    {
+      "url": "https://www.unilever.com/accessibility.html",
+      "status": 403,
+      "section": "footer",
+      "text": "Accessibility statementopens in a new window"
+    },
+    {
+      "url": "https://www.unilever.com/rss.html",
+      "status": 403,
+      "section": "footer",
+      "text": "RSSopens in a new window"
+    },
+    {
+      "url": "https://www.unilevernotices.com/global/en_gb/privacy-notice/notice.html",
+      "status": 403,
+      "section": "footer",
+      "text": "Privacy Statementopens in a new window"
+    },
+    {
+      "url": "https://www.unilevernotices.com/cookie-notices.html",
+      "status": 200,
+      "section": "footer",
+      "text": "Cookie noticeopens in a new window"
+    },
+    {
+      "url": "https://www.onetrust.com/products/cookie-consent/",
+      "status": 200,
+      "section": "body",
+      "text": "No text content"
+    },
+    {
+      "url": "https://unilever.com/",
+      "status": 403,
+      "section": "footer",
+      "text": "Unilever.comopens in a new window"
+    },
+    {
+      "url": "https://cookiepedia.co.uk/giving-consent-to-cookies",
+      "status": 200,
+      "section": "body",
+      "text": "More information"
+    },
+    {
+      "url": "https://s.survale.com/4464?siteId=264&wUrl=https%3A%2F%2Fcareers.unilever.com%2Fbenefits-learning-wellbeing&compact=true&width=450",
+      "status": 200,
+      "section": "body",
+      "text": "No text content"
+    }
+  ],
+  "brokenLinks": [
+    {
+      "url": "https://unilever.com/",
+      "status": 403,
+      "statusText": "Forbidden",
+      "section": "header",
+      "text": "Visit Unilever.comopens in a new window"
+    },
+    {
+      "url": "https://www.unilever.com/planet-and-society/health-and-wellbeing",
+      "status": 403,
+      "statusText": "Forbidden",
+      "section": "main",
+      "text": "Learn moreopens in a new window"
+    },
+    {
+      "url": "https://www.facebook.com/UnileverCareers",
+      "status": 400,
+      "statusText": "Bad Request",
+      "section": "main",
+      "text": "opens in a new window"
+    },
+    {
+      "url": "https://www.unilever.com/contact/",
+      "status": 403,
+      "statusText": "Forbidden",
+      "section": "main",
+      "text": "Contact usopens in a new window"
+    },
+    {
+      "url": "https://www.unilever.com/legal.html",
+      "status": 403,
+      "statusText": "Forbidden",
+      "section": "footer",
+      "text": "Legal Noticeopens in a new window"
+    },
+    {
+      "url": "https://www.unilevernotices.com/recruitment-notice/notice.html",
+      "status": 403,
+      "statusText": "Forbidden",
+      "section": "footer",
+      "text": "Recruitment Privacy Noticeopens in a new window"
+    },
+    {
+      "url": "https://www.unilever.com/accessibility.html",
+      "status": 403,
+      "statusText": "Forbidden",
+      "section": "footer",
+      "text": "Accessibility statementopens in a new window"
+    },
+    {
+      "url": "https://www.unilever.com/rss.html",
+      "status": 403,
+      "statusText": "Forbidden",
+      "section": "footer",
+      "text": "RSSopens in a new window"
+    },
+    {
+      "url": "https://www.unilevernotices.com/global/en_gb/privacy-notice/notice.html",
+      "status": 403,
+      "statusText": "Forbidden",
+      "section": "footer",
+      "text": "Privacy Statementopens in a new window"
+    },
+    {
+      "url": "https://unilever.com/",
+      "status": 403,
+      "statusText": "Forbidden",
+      "section": "footer",
+      "text": "Unilever.comopens in a new window"
+    }
+  ]
+}
