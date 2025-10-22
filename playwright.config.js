@@ -43,12 +43,20 @@ const config = ({
   use:{
     browserName : 'chromium', // default browser
   //browserName : 'webkit',
-    headless: false, // run tests in headless mode
+    headless: true, // run tests in headless mode
     screenshot : 'only-on-failure', // take screenshot
     trace : 'retain-on-failure', // collect trace on failure
-    video : 'retain-on-failure'
+    video : 'retain-on-failure',
+    launchOptions: {
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--disable-gpu',
+      '--disable-dev-shm-usage'
+    ]
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-  },
+    }
+  }
 });
 
 module.exports = config;
