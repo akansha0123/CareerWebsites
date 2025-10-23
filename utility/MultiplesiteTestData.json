@@ -1,0 +1,85 @@
+{
+ "urls": [
+        {
+            "name": "Job Location",
+            "url": "https://unilevergst.runmytests.com/job_location/hoboken/associate-director-retail-media/34155/87502215744/953997"
+        },
+        {
+            "name": "Search Jobs",
+            "url": "https://vincigst.runmytests.eu/fr/recherche-d%27offres?"
+        },
+        {
+            "name" : "Job Description",
+            "url" : "https://vincigst.runmytests.eu/fr/emploi/karawang/ingenieur-projet-v-i-e-centre-de-donnees-indonesie/1440/29615574528"
+        },
+        {
+            "name": "Sitemap",
+            "url": "https://vincigst.runmytests.eu/fr/sitemap"
+        },
+        {
+            "name": "Cookie-management",
+            "url": "https://vincigst.runmytests.eu/fr/cookie-management"
+        },
+        {
+            "name": "Privacy Policy",
+            "url": "https://vincigst.runmytests.eu/fr/privacy-policy"
+        },
+        {
+            "name": "Legal Notice",
+            "url": "https://vincigst.runmytests.eu/fr/mentions-legales"
+        },
+        {
+            "name": "General Condition of Use",
+            "url": "https://vincigst.runmytests.eu/fr/Conditions-G%C3%A9n%C3%A9rales-d%E2%80%99Utilisation"
+        },
+        {
+            "name": "Accessibility",
+            "url": "https://vincigst.runmytests.eu/fr/accessibility/"
+        }
+    ],
+"websiteURL" : "https://vincigst.runmytests.eu/fr",
+"searchJOB" : "https://vincigst.runmytests.eu/fr/recherche-d%27offres?",
+"sitemap" : "https://vincigst.runmytests.eu/fr/sitemap",
+"selectors" :{
+    "cookieAcceptbutton": ["#onetrust-accept-btn-handler", "#system-ialert-button"]
+},
+ "errorCodes": {
+        "clientErrors": {
+            "400": "Bad Request",
+            "401": "Unauthorized",
+            "402": "Payment Required",
+            "403": "Forbidden",
+            "404": "Not Found",
+            "405": "Method Not Allowed",
+            "406": "Not Acceptable",
+            "407": "Proxy Authentication Required",
+            "408": "Request Timeout",
+            "409": "Conflict"
+        },
+        "serverErrors": {
+            "500": "Internal Server Error",
+            "501": "Not Implemented",
+            "502": "Bad Gateway",
+            "503": "Service Unavailable",
+            "504": "Gateway Timeout"
+        }
+    },
+    "linkValidation": {
+        "batchSize": 5,
+        "timeout": 10000,
+        "errorStyles": {
+            "clientError": {
+                "borderColor": "#ff9800",
+                "backgroundColor": "#fff3e0"
+            },
+            "serverError": {
+                "borderColor": "#f44336",
+                "backgroundColor": "#ffebee"
+            },
+            "networkError": {
+                "borderColor": "#9c27b0",
+                "backgroundColor": "#f3e5f5"
+            }
+        }
+    }
+}

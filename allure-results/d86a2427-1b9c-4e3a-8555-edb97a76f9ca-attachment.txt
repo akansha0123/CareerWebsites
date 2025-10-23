@@ -1,0 +1,14 @@
+
+Link Analysis for https://careers.unilever.com/working-at-unilever
+Total Links: 41
+Internal Links: 21
+External Links: 20
+Broken Links: 10
+Critical Errors: 10
+
+Breakdown by Section:
+body: 4 links
+header: 4 links
+nav: 15 links
+main: 10 links
+footer: 8 links

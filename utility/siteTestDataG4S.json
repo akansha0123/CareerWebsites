@@ -1,4 +1,26 @@
 {
+   "urls": [
+        {
+            "name": "Homepage",
+            "url": "https://careers.g4s.com/en"
+        },
+        {
+            "name": "Search Jobs",
+            "url": "https://careers.g4s.com/en/search-jobs"
+        },
+        {
+            "name": "Sitemap",
+            "url": "https://careers.g4s.com/en/sitemap"
+        },
+        {
+            "name": "Culture",
+            "url": "https://careers.g4s.com/en/culture-and-belonging"
+        },
+        {
+            "name": "Security Services",
+            "url": "https://careers.g4s.com/en/security-services"
+        }
+    ],
 "websiteURL" : "https://careers.g4s.com/en",
 "searchJOB" : "https://careers.g4s.com/en/search-jobs",
 "sitemap" : "https://careers.g4s.com/en/sitemap",
@@ -14,20 +36,61 @@
 ],
 "invalidsearchloc1" : "32arctic",
 "invalidsearchloc2" : "123445",
-"sitemapText" : "Sitemap",
+"sitemapText": "Sitemap",
 "locerrorMsg" : "Please try again.",
 "noresultsMessage" : "Please try a different keyword/location combination or broaden your search criteria.",
 "selectors" :{
-    "cookieAcceptbutton": "#onetrust-accept-btn-handler",
+    "cookieAcceptbutton": ["#onetrust-accept-btn-handler", "#system-ialert-button"],
     "searchKeyword": ".search-keyword",
     "searchLocation": "input.search-location",
-    "locDropdown" : ".mindreader-results",
+    "locDropdown" : "[aria-labelledby*='search-location']",
     "searchButton": "[data-last-action='search-submit']",
     "errorLoc" : "p[aria-hidden='false']",
-     "siteMap": "[href='/sitemap']",
-     "searchresultHeader" : "span.search-results__header",
-     "noResultLocator": "#no-results",
-     "jobListing" : "li.job-list-tile__item",
-     "saveJobButton" : "button[aria-pressed='false']"
-}
+    "siteMap": "a[href*='/sitemap']",
+    "searchresultHeader" : "span.search-results__header",
+    "noResultLocator": "#no-results",
+    "jobListing" : "li.job-list-tile__item",
+    "saveJobButton" : "button[aria-pressed='false']",
+    "savedJobButton" : "section li button[aria-pressed='true']",
+    "savedJobLink" : "div .btn--brand3"
+},
+ "errorCodes": {
+        "clientErrors": {
+            "400": "Bad Request",
+            "401": "Unauthorized",
+            "402": "Payment Required",
+            "403": "Forbidden",
+            "404": "Not Found",
+            "405": "Method Not Allowed",
+            "406": "Not Acceptable",
+            "407": "Proxy Authentication Required",
+            "408": "Request Timeout",
+            "409": "Conflict"
+        },
+        "serverErrors": {
+            "500": "Internal Server Error",
+            "501": "Not Implemented",
+            "502": "Bad Gateway",
+            "503": "Service Unavailable",
+            "504": "Gateway Timeout"
+        }
+    },
+    "linkValidation": {
+        "batchSize": 5,
+        "timeout": 10000,
+        "errorStyles": {
+            "clientError": {
+                "borderColor": "#ff9800",
+                "backgroundColor": "#fff3e0"
+            },
+            "serverError": {
+                "borderColor": "#f44336",
+                "backgroundColor": "#ffebee"
+            },
+            "networkError": {
+                "borderColor": "#9c27b0",
+                "backgroundColor": "#f3e5f5"
+            }
+        }
+    }
 }

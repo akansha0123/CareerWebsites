@@ -1,0 +1,10 @@
+Link check failed for https://careers.unilever.com/diversity-and-inclusion: Error: Found 10 broken links (10 critical errors)
+    at C:\TheCareerWebsites\tests\UIandFunctionalTest.spec.js:263:19
+    at C:\TheCareerWebsites\node_modules\playwright\lib\worker\workerMain.js:309:9
+    at C:\TheCareerWebsites\node_modules\playwright\lib\worker\testInfo.js:326:11
+    at TimeoutManager.withRunnable (C:\TheCareerWebsites\node_modules\playwright\lib\worker\timeoutManager.js:67:14)
+    at TestInfoImpl._runWithTimeout (C:\TheCareerWebsites\node_modules\playwright\lib\worker\testInfo.js:324:7)
+    at C:\TheCareerWebsites\node_modules\playwright\lib\worker\workerMain.js:307:7
+    at WorkerMain._runTest (C:\TheCareerWebsites\node_modules\playwright\lib\worker\workerMain.js:282:5)
+    at WorkerMain.runTestGroup (C:\TheCareerWebsites\node_modules\playwright\lib\worker\workerMain.js:194:11)
+    at process.<anonymous> (C:\TheCareerWebsites\node_modules\playwright\lib\common\process.js:65:22)

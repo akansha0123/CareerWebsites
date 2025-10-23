@@ -1,0 +1,5 @@
+Setting up test for: https://careers.unilever.com/diversity-and-inclusion
+✅ Cookie banner accepted using: #onetrust-accept-btn-handler
+
+Checking video playback on: https://careers.unilever.com/diversity-and-inclusion
+ℹ️ No videos found on https://careers.unilever.com/diversity-and-inclusion

@@ -1,0 +1,14 @@
+
+Link Analysis for https://careers.unilever.com/diversity-and-inclusion
+Total Links: 44
+Internal Links: 24
+External Links: 20
+Broken Links: 10
+Critical Errors: 10
+
+Breakdown by Section:
+header: 4 links
+body: 4 links
+nav: 15 links
+main: 13 links
+footer: 8 links

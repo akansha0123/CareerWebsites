@@ -1,0 +1,539 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#content"
+    - generic [ref=e4]:
+      - banner [ref=e7]:
+        - generic [ref=e8]:
+          - link "Unilever careers home" [ref=e10] [cursor=pointer]:
+            - /url: /
+            - img "Unilever careers home" [ref=e11] [cursor=pointer]
+          - generic [ref=e12]:
+            - list [ref=e13]:
+              - listitem [ref=e14] [cursor=pointer]:
+                - text: Visit Unilever.com
+                - generic [ref=e15] [cursor=pointer]: opens in a new window
+              - listitem [ref=e16] [cursor=pointer]: Register for job alerts
+              - listitem [ref=e17] [cursor=pointer]: Saved jobs
+              - listitem [ref=e18] [cursor=pointer]:
+                - text: My applications
+                - generic [ref=e19] [cursor=pointer]: opens in a new window
+            - navigation "Lower navigation menu" [ref=e20]:
+              - navigation [ref=e21]:
+                - button "Working at Unilever. Toggles submenu" [ref=e22] [cursor=pointer]: Working at Unilever
+                - button "Our Locations. Toggles submenu" [ref=e23] [cursor=pointer]: Our Locations
+                - link "Digital Careers" [ref=e24] [cursor=pointer]:
+                  - /url: /digital
+                - link "Experienced Careers" [ref=e25] [cursor=pointer]:
+                  - /url: /experienced-careers
+                - button "Early Careers. Toggles submenu" [ref=e26] [cursor=pointer]: Early Careers
+              - button "Open search form" [ref=e27] [cursor=pointer]:
+                - generic [ref=e28] [cursor=pointer]: Search jobs
+      - generic [ref=e30]:
+        - heading "Equity, Diversity & Inclusion" [level=1] [ref=e31]
+        - paragraph [ref=e32]: "We want to see a society where everyone is equal. We know our foundation must be an equitable workplace that recognises the dignity and worth of everyone, and gives all our employees the freedom and opportunity to fulfil their potential: we want for you to be able to bring your whole self to work, so you can be the best you can be and live your purpose whilst developing your career with us."
+        - search [ref=e34]:
+          - group "Search Jobs" [ref=e35]:
+            - paragraph [ref=e36]:
+              - generic [ref=e37]: Search job title/keyword
+              - searchbox "Search job title/keyword" [ref=e38]
+            - paragraph [ref=e39]:
+              - generic [ref=e40]: Location
+              - combobox "Location" [ref=e41]
+            - button "Search" [ref=e42] [cursor=pointer]:
+              - generic [ref=e43] [cursor=pointer]: Search
+    - main [ref=e45]:
+      - generic [ref=e47]:
+        - heading "Our ambition" [level=2] [ref=e48]
+        - paragraph [ref=e49]: Our ambition is to build equitable workplaces and to achieve equity, diversity and inclusion in everything we do. If we had to sum up what we're trying to achieve in our workplaces, we'd call it 'belonging' – a deep sense of inclusion, so everyone receives fair treatment, fair access, and fair opportunities.
+      - generic [ref=e50]:
+        - paragraph [ref=e52]: "At the heart of this approach is our commitment to equity at every stage of our your career, through:"
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - paragraph [ref=e57]:
+              - strong [ref=e58]: Our policies and practices,
+              - text: by removing barriers and bias from all existing policies and practices which impact employees' experience
+            - paragraph [ref=e62]:
+              - strong [ref=e63]: Our employee experience,
+              - text: by establishing leadership accountability for equipping and supporting our employees to excel in their roles and contribute to the growth of the business
+          - generic [ref=e64]:
+            - paragraph [ref=e68]:
+              - strong [ref=e69]: Our talent attraction,
+              - text: recruitment and selection, development and career progression by removing barriers and exclusionary practices in all markets
+            - paragraph [ref=e73]:
+              - strong [ref=e74]: In representation and retention,
+              - text: by seeking to make our workforce fundamentally representative of the populations in the geography in which they operate, and of their customer base
+      - paragraph [ref=e77]:
+        - text: Our ambition includes abiding by our Code of Business Principles, which states that we will recruit, employ and promote employees on the sole basis of the qualifications and abilities needed for the work to be performed. Find out more about our Business Integrity and Code of Business Principles
+        - link "here opens in a new window" [ref=e78] [cursor=pointer]:
+          - /url: https://www.unilever.com/planet-and-society/responsible-business/business-integrity/
+          - text: here
+          - generic [ref=e79] [cursor=pointer]: opens in a new window
+        - text: .
+      - generic [ref=e82]:
+        - heading "Focusing on the under-represented" [level=2] [ref=e83]:
+          - text: Focusing on the
+          - text: under-represented
+        - generic [ref=e84]:
+          - paragraph [ref=e85]: "At a global level, we've identified four focus areas for our Equity, Diversity and Inclusion strategy: gender, race and ethnicity, people with disabilities, and LGBTQI+ communities."
+          - paragraph [ref=e86]: We're working to address the challenges of these groups' under-representation at all levels of our organisation. However, we know that under-representation is not confined to people in these groups alone – so our approach supports each of our markets in identifying who is under-represented or excluded, and why.
+      - generic [ref=e88]:
+        - heading "Equitable workplace" [level=2] [ref=e90]
+        - generic [ref=e91]:
+          - tablist [ref=e92]:
+            - tab "Driving an equitable workplace" [ref=e93] [cursor=pointer]:
+              - generic [ref=e95] [cursor=pointer]: Driving an equitable workplace
+            - tab "#Unstereotype" [ref=e96] [cursor=pointer]:
+              - generic [ref=e98] [cursor=pointer]: "#Unstereotype"
+            - tab "Women in the workplace" [ref=e99] [cursor=pointer]:
+              - generic [ref=e101] [cursor=pointer]: Women in the workplace
+            - tab "Women in leadership" [ref=e102] [cursor=pointer]:
+              - generic [ref=e104] [cursor=pointer]: Women in leadership
+            - tab "Gender equality" [ref=e105] [cursor=pointer]:
+              - generic [ref=e107] [cursor=pointer]: Gender equality
+            - tab "Living with a disability" [ref=e108] [cursor=pointer]:
+              - generic [ref=e110] [cursor=pointer]: Living with a disability
+            - tab "Fairness in the workplace" [ref=e111] [cursor=pointer]:
+              - generic [ref=e113] [cursor=pointer]: Fairness in the workplace
+            - tab "Achieving racial and ethnic diversity" [ref=e114] [cursor=pointer]:
+              - generic [ref=e116] [cursor=pointer]: Achieving racial and ethnic diversity
+            - tab "Taking action to include LGBTQI+" [ref=e117] [cursor=pointer]:
+              - generic [ref=e119] [cursor=pointer]: Taking action to include LGBTQI+
+          - tabpanel "Driving an equitable workplace" [ref=e121]:
+            - generic [ref=e123]:
+              - heading "Driving an equitable workplace" [level=3] [ref=e124]
+              - paragraph [ref=e125]: We have a vision to drive a workplace that is more equitable by transforming the way we think. We’re tackling social inequality and unfairness while empowering those who are under-represented simply because of who they are. How? By not only transforming our brands and products, but by working together to instil a deep sense of belonging.
+        - generic [ref=e127]:
+          - paragraph [ref=e128]: Do you want to search a job that fits you?
+          - link "Search jobs opens in a new window" [ref=e129] [cursor=pointer]:
+            - /url: /search-jobs
+            - text: Search jobs
+            - generic [ref=e130] [cursor=pointer]: opens in a new window
+      - generic [ref=e132]:
+        - heading "Related content" [level=2] [ref=e133]
+        - list [ref=e134]:
+          - listitem [ref=e135]:
+            - generic [ref=e137]:
+              - heading "Experienced Careers" [level=3] [ref=e138]
+              - paragraph [ref=e139]: Ready to take the next step in your career? Search for your uniquely Unilever opportunity.
+              - link "learn more about Experienced Careers" [ref=e140] [cursor=pointer]:
+                - /url: /experienced-careers
+                - text: Learn more
+          - listitem [ref=e141]:
+            - generic [ref=e143]:
+              - heading "Unilever Future Leaders Programme" [level=3] [ref=e144]
+              - paragraph [ref=e145]: Discover new career opportunities, upskill yourself, and engage with our early career programs globally
+              - link "learn more about Unilever Future Leaders Programme" [ref=e146] [cursor=pointer]:
+                - /url: /unilever-future-leaders-programme
+                - text: Learn more
+          - listitem [ref=e147]:
+            - generic [ref=e149]:
+              - heading "Working at Unilever" [level=3] [ref=e150]
+              - paragraph [ref=e151]: We are Unilever, an ambitious organisation and home to over 400 purposeful and global brands.
+              - link "learn more about Working at Unilever" [ref=e152] [cursor=pointer]:
+                - /url: /working-at-unilever
+                - text: Learn more
+      - generic [ref=e154]:
+        - generic [ref=e155]:
+          - heading "Join our talent network" [level=2] [ref=e156]:
+            - text: Join our
+            - text: talent network
+          - paragraph [ref=e157]: Make sure you see job opportunities when they become available. Just leave a few details below to stay up to date with jobs that suit you and your skills.
+          - paragraph [ref=e158]: "* Indicates required field"
+        - generic [ref=e160]:
+          - paragraph [ref=e161]:
+            - generic [ref=e162]:
+              - text: First Name
+              - generic [ref=e163]: "*"
+            - textbox "First Name" [ref=e164]
+          - paragraph [ref=e165]:
+            - generic [ref=e166]:
+              - text: Last Name
+              - generic [ref=e167]: "*"
+            - textbox "Last Name" [ref=e168]
+          - paragraph [ref=e169]:
+            - generic [ref=e170]:
+              - text: Email
+              - generic [ref=e171]: "*"
+            - textbox "Email" [ref=e172]
+          - paragraph [ref=e173]:
+            - generic [ref=e174]:
+              - generic [ref=e175]: Country Code
+              - combobox "Country Code" [ref=e176]:
+                - option "+1" [selected]
+                - option "+1242"
+                - option "+1246"
+                - option "+1264"
+                - option "+1268"
+                - option "+1284"
+                - option "+1340"
+                - option "+1441"
+                - option "+1473"
+                - option "+1649"
+                - option "+1664"
+                - option "+1670"
+                - option "+1671"
+                - option "+1684"
+                - option "+1758"
+                - option "+1767"
+                - option "+1784"
+                - option "+1849"
+                - option "+1868"
+                - option "+1869"
+                - option "+1876"
+                - option "+1939"
+                - option "+20"
+                - option "+211"
+                - option "+212"
+                - option "+213"
+                - option "+216"
+                - option "+218"
+                - option "+220"
+                - option "+221"
+                - option "+222"
+                - option "+223"
+                - option "+224"
+                - option "+225"
+                - option "+226"
+                - option "+227"
+                - option "+228"
+                - option "+229"
+                - option "+230"
+                - option "+231"
+                - option "+232"
+                - option "+233"
+                - option "+234"
+                - option "+235"
+                - option "+236"
+                - option "+237"
+                - option "+238"
+                - option "+239"
+                - option "+240"
+                - option "+241"
+                - option "+242"
+                - option "+243"
+                - option "+244"
+                - option "+245"
+                - option "+248"
+                - option "+249"
+                - option "+250"
+                - option "+251"
+                - option "+252"
+                - option "+253"
+                - option "+254"
+                - option "+255"
+                - option "+256"
+                - option "+257"
+                - option "+258"
+                - option "+261"
+                - option "+262"
+                - option "+264"
+                - option "+265"
+                - option "+266"
+                - option "+267"
+                - option "+268"
+                - option "+269"
+                - option "+27"
+                - option "+290"
+                - option "+291"
+                - option "+297"
+                - option "+298"
+                - option "+299"
+                - option "+30"
+                - option "+31"
+                - option "+32"
+                - option "+33"
+                - option "+34"
+                - option "+345"
+                - option "+350"
+                - option "+351"
+                - option "+352"
+                - option "+353"
+                - option "+354"
+                - option "+355"
+                - option "+356"
+                - option "+357"
+                - option "+358"
+                - option "+359"
+                - option "+36"
+                - option "+370"
+                - option "+371"
+                - option "+372"
+                - option "+373"
+                - option "+374"
+                - option "+375"
+                - option "+376"
+                - option "+377"
+                - option "+378"
+                - option "+379"
+                - option "+380"
+                - option "+381"
+                - option "+382"
+                - option "+385"
+                - option "+386"
+                - option "+387"
+                - option "+389"
+                - option "+39"
+                - option "+40"
+                - option "+41"
+                - option "+420"
+                - option "+421"
+                - option "+423"
+                - option "+43"
+                - option "+44"
+                - option "+45"
+                - option "+46"
+                - option "+47"
+                - option "+48"
+                - option "+49"
+                - option "+500"
+                - option "+501"
+                - option "+502"
+                - option "+503"
+                - option "+504"
+                - option "+505"
+                - option "+506"
+                - option "+507"
+                - option "+508"
+                - option "+509"
+                - option "+51"
+                - option "+52"
+                - option "+53"
+                - option "+54"
+                - option "+55"
+                - option "+56"
+                - option "+57"
+                - option "+58"
+                - option "+590"
+                - option "+591"
+                - option "+593"
+                - option "+594"
+                - option "+595"
+                - option "+596"
+                - option "+597"
+                - option "+598"
+                - option "+599"
+                - option "+60"
+                - option "+61"
+                - option "+62"
+                - option "+63"
+                - option "+64"
+                - option "+65"
+                - option "+66"
+                - option "+670"
+                - option "+672"
+                - option "+673"
+                - option "+674"
+                - option "+675"
+                - option "+676"
+                - option "+677"
+                - option "+678"
+                - option "+679"
+                - option "+680"
+                - option "+681"
+                - option "+682"
+                - option "+683"
+                - option "+685"
+                - option "+686"
+                - option "+687"
+                - option "+688"
+                - option "+689"
+                - option "+690"
+                - option "+692"
+                - option "+7"
+                - option "+77"
+                - option "+81"
+                - option "+82"
+                - option "+84"
+                - option "+850"
+                - option "+852"
+                - option "+853"
+                - option "+855"
+                - option "+856"
+                - option "+86"
+                - option "+872"
+                - option "+880"
+                - option "+886"
+                - option "+90"
+                - option "+91"
+                - option "+92"
+                - option "+93"
+                - option "+94"
+                - option "+95"
+                - option "+960"
+                - option "+961"
+                - option "+962"
+                - option "+963"
+                - option "+964"
+                - option "+965"
+                - option "+966"
+                - option "+967"
+                - option "+968"
+                - option "+970"
+                - option "+971"
+                - option "+972"
+                - option "+973"
+                - option "+974"
+                - option "+975"
+                - option "+976"
+                - option "+977"
+                - option "+98"
+                - option "+992"
+                - option "+993"
+                - option "+994"
+                - option "+995"
+                - option "+996"
+                - option "+998"
+            - generic [ref=e177]:
+              - generic [ref=e178]: Phone Number
+              - textbox "Phone Number" [ref=e179]
+          - paragraph [ref=e181]:
+            - generic [ref=e182]: Upload Resume
+            - button "Upload Resume" [ref=e183]
+          - group "Interested In" [ref=e184]:
+            - generic [ref=e185]: Interested In
+            - generic [ref=e186]: Please select a category and / or a location option. Click "Add" to add your preferences, then click "Sign up" to register
+            - paragraph [ref=e187]:
+              - generic [ref=e188]: Category
+              - combobox "Category" [ref=e189]:
+                - option "Select a Job Category" [selected]
+                - option "Audit"
+                - option "Communications & Corporate Affairs"
+                - option "Customer Development"
+                - option "Finance"
+                - option "General Management"
+                - option "Human Resources"
+                - option "Information Technology"
+                - option "Legal"
+                - option "Marketing"
+                - option "Project Management"
+                - option "Research & Development"
+                - option "Supply Chain"
+                - option "Uniops"
+                - option "Workplace Services"
+            - paragraph [ref=e190]:
+              - generic [ref=e191]: Location
+              - combobox "Location Type to select" [ref=e192]
+            - button "Add Job Alert" [disabled] [ref=e193] [cursor=pointer]: Add
+            - region "Selected Job Alerts":
+              - list
+          - paragraph [ref=e194]:
+            - text: By signing up, I acknowledge that I have read Unilever's
+            - link "privacy notice opens in a new window" [ref=e195] [cursor=pointer]:
+              - /url: https://www.unilevernotices.com/privacy-notices/global-english.html
+              - text: privacy notice
+              - generic [ref=e196] [cursor=pointer]: opens in a new window
+            - text: and that I wish to receive email and SMS communications. I understand that I can opt out of receiving email and SMS communications at any time.
+          - paragraph [ref=e197]:
+            - iframe [ref=e201]:
+              - generic [ref=f1e2]:
+                - generic [ref=f1e3]:
+                  - generic [ref=f1e4]:
+                    - text: protected by
+                    - strong [ref=f1e5]: reCAPTCHA
+                  - generic [ref=f1e6]:
+                    - link "Privacy" [ref=f1e7] [cursor=pointer]:
+                      - /url: https://www.google.com/intl/en/policies/privacy/
+                    - generic [ref=f1e8]: "-"
+                    - link "Terms" [ref=f1e9] [cursor=pointer]:
+                      - /url: https://www.google.com/intl/en/policies/terms/
+                - generic [ref=f1e13]: "-"
+            - button "Sign Up for Job Alerts" [ref=e202] [cursor=pointer]: Sign up
+            - link "Already a member? Sign in" [ref=e203] [cursor=pointer]:
+              - /url: https://careers.unilever.com/sys/tc/sign-in?status=greeting&id=9c84466f-add2-453f-8792-4fe0c0d8a136&lang=en
+      - generic [ref=e205]:
+        - heading "Connect with us" [level=2] [ref=e206]
+        - paragraph [ref=e207]: We’re always looking to connect with those who share an interest in a sustainable future.
+        - list [ref=e208]:
+          - listitem [ref=e209]:
+            - link "Unilever LinkedIn channel" [ref=e210] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/unilever/
+              - generic [ref=e211] [cursor=pointer]: opens in a new window
+          - listitem [ref=e212]:
+            - link "Unilever Facebook channel" [ref=e213] [cursor=pointer]:
+              - /url: https://www.facebook.com/UnileverCareers
+              - generic [ref=e214] [cursor=pointer]: opens in a new window
+          - listitem [ref=e215]:
+            - link "Unilever Twitter channel" [ref=e216] [cursor=pointer]:
+              - /url: https://twitter.com/Unilever?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor
+              - generic [ref=e217] [cursor=pointer]: opens in a new window
+          - listitem [ref=e218]:
+            - link "Unilever Instagram channel" [ref=e219] [cursor=pointer]:
+              - /url: https://www.instagram.com/unileverglobalcareers/
+              - generic [ref=e220] [cursor=pointer]: opens in a new window
+          - listitem [ref=e221]:
+            - link "Unilever Youtube channel" [ref=e222] [cursor=pointer]:
+              - /url: https://www.youtube.com/user/unilever
+              - generic [ref=e223] [cursor=pointer]: opens in a new window
+        - heading "Contact us" [level=2] [ref=e224]
+        - paragraph [ref=e225]: Get in touch with Unilever PLC and specialist teams in our headquarters, or find contacts around the world.
+        - link "Contact us opens in a new window" [ref=e226] [cursor=pointer]:
+          - /url: https://www.unilever.com/contact/
+          - text: Contact us
+          - generic [ref=e227] [cursor=pointer]: opens in a new window
+    - contentinfo [ref=e228]:
+      - generic [ref=e229]:
+        - paragraph [ref=e230]: Unilever UK © Unilever 2025
+        - paragraph [ref=e231]:
+          - text: RECRUITMENT SCAMS & FRAUD WARNING. We will
+          - generic [ref=e232]: never
+          - text: ask for the exchange of money or credit card details in the Recruitment process. Please be aware of any suspicious email activity from people who could be pretending to be recruiters or senior individuals at Unilever. If in doubt, please ignore the message.
+        - list [ref=e233]:
+          - listitem [ref=e234]:
+            - link "Sitemap" [ref=e235] [cursor=pointer]:
+              - /url: /sitemap
+            - text: "|"
+          - listitem [ref=e236]:
+            - link "Legal Notice opens in a new window" [ref=e237] [cursor=pointer]:
+              - /url: https://www.unilever.com/legal.html
+              - text: Legal Notice
+              - generic [ref=e238] [cursor=pointer]: opens in a new window
+            - text: "|"
+          - listitem [ref=e239]:
+            - link "Recruitment Privacy Notice opens in a new window" [ref=e240] [cursor=pointer]:
+              - /url: https://www.unilevernotices.com/recruitment-notice/notice.html
+              - text: Recruitment Privacy Notice
+              - generic [ref=e241] [cursor=pointer]: opens in a new window
+            - text: "|"
+          - listitem [ref=e242]:
+            - link "Accessibility statement opens in a new window" [ref=e243] [cursor=pointer]:
+              - /url: https://www.unilever.com/accessibility.html
+              - text: Accessibility statement
+              - generic [ref=e244] [cursor=pointer]: opens in a new window
+            - text: "|"
+          - listitem [ref=e245]:
+            - link "Privacy Statement opens in a new window" [ref=e246] [cursor=pointer]:
+              - /url: https://www.unilevernotices.com/global/en_gb/privacy-notice/notice.html
+              - text: Privacy Statement
+              - generic [ref=e247] [cursor=pointer]: opens in a new window
+            - text: "|"
+          - listitem [ref=e248]:
+            - link "RSS opens in a new window" [ref=e249] [cursor=pointer]:
+              - /url: https://www.unilever.com/rss.html
+              - text: RSS
+              - generic [ref=e250] [cursor=pointer]: opens in a new window
+            - text: "|"
+          - listitem [ref=e251]:
+            - link "Cookie notice opens in a new window" [ref=e252] [cursor=pointer]:
+              - /url: https://www.unilevernotices.com/cookie-notices.html
+              - text: Cookie notice
+              - generic [ref=e253] [cursor=pointer]: opens in a new window
+            - text: "|"
+          - listitem [ref=e254]:
+            - link "Unilever.com opens in a new window" [ref=e255] [cursor=pointer]:
+              - /url: https://unilever.com
+              - text: Unilever.com
+              - generic [ref=e256] [cursor=pointer]: opens in a new window
+  - status
+  - status
+  - status
+  - status
+  - status
+  - status
+  - button "Cookie Preferences" [ref=e257] [cursor=pointer]
+  - button "Candidate Feedback" [ref=e258] [cursor=pointer]:
+    - img "Candidate Feedback" [ref=e259] [cursor=pointer]
+```

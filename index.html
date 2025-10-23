@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Websites Test Automation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        select, button {
+            padding: 8px;
+            margin: 5px 0;
+            width: 200px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #results {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .url-list {
+            margin-bottom: 20px;
+        }
+
+        .url-input {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .url-input input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .add-url {
+            background-color: #2196F3;
+            margin-bottom: 20px;
+        }
+
+        .remove-url {
+            background-color: #f44336;
+        }
+
+        .test-selection {
+            margin-bottom: 20px;
+        }
+
+        .test-category {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #specificTest {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Career Websites Test Automation</h1>
+
+        <div class="url-list">
+            <label>Test URLs:</label>
+            <div class="url-input">
+                <input type="url" placeholder="Enter website URL" required>
+                <button class="remove-url">Remove</button>
+            </div>
+        </div>
+        <button class="add-url">Add Another URL</button>
+
+        <div class="test-selection">
+            <div class="test-category">
+                <label for="testType">Select Test Type:</label>
+                <select id="testType" onchange="updateSpecificTests()">
+                    <option value="all">All Smoke Tests</option>
+                    <option value="specific">Specific Test Case</option>
+                </select>
+            </div>
+
+            <div id="specificTestContainer" style="display: none;">
+                <label for="specificTest">Select Specific Test:</label>
+                <select id="specificTest">
+                    <option value="favicon">Validate Favicon</option>
+                    <option value="meta">Validate Meta Title and Description</option>
+                    <option value="links">Check Broken Links</option>
+                    <option value="images">Check Broken Images</option>
+                    <option value="placeholder">Check Placeholder Content</option>
+                    <option value="video">Test Video Playback</option>
+                    <option value="sitemap">Validate Sitemap</option>
+                    <option value="savedjobs">Validate Saved Jobs</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button onclick="runTests()">Run Tests</button>
+            <button onclick="generateReport()">Generate Report</button>
+        </div>
+
+        <div class="loading">
+            <div class="spinner"></div>
+            <p>Running tests...</p>
+        </div>
+
+        <div id="results">
+            <h2>Test Results</h2>
+            <div id="testOutput"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const addUrlButton = document.querySelector('.add-url');
+            const urlList = document.querySelector('.url-list');
+
+            addUrlButton.addEventListener('click', () => {
+                const urlInput = document.createElement('div');
+                urlInput.className = 'url-input';
+                urlInput.innerHTML = `
+                    <input type="url" placeholder="Enter website URL" required>
+                    <button class="remove-url">Remove</button>
+                `;
+                urlList.appendChild(urlInput);
+            });
+
+            urlList.addEventListener('click', (e) => {
+                if (e.target.classList.contains('remove-url')) {
+                    const inputs = document.querySelectorAll('.url-input');
+                    if (inputs.length > 1) {
+                        e.target.parentElement.remove();
+                    }
+                }
+            });
+        });
+
+        function updateSpecificTests() {
+            const testType = document.getElementById('testType').value;
+            const specificContainer = document.getElementById('specificTestContainer');
+            specificContainer.style.display = testType === 'specific' ? 'block' : 'none';
+        }
+
+        async function runTests() {
+            const loading = document.querySelector('.loading');
+            const outputDiv = document.getElementById('testOutput');
+            const urls = Array.from(document.querySelectorAll('.url-input input'))
+                .map(input => input.value)
+                .filter(url => url);
+
+            if (urls.length === 0) {
+                alert('Please enter at least one URL');
+                return;
+            }
+
+            const testType = document.getElementById('testType').value;
+            const specificTest = document.getElementById('specificTest').value;
+
+            loading.style.display = 'block';
+            outputDiv.innerHTML = 'Running tests...';
+
+            try {
+                const response = await fetch('/run-tests', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        urls,
+                        testType,
+                        specificTest: testType === 'specific' ? specificTest : null
+                    })
+                });
+
+                const data = await response.json();
+                outputDiv.innerHTML = `
+                    <h3>Test Results:</h3>
+                    <pre>${JSON.stringify(data, null, 2)}</pre>
+                `;
+            } catch (error) {
+                outputDiv.innerHTML = `Error running tests: ${error.message}`;
+            } finally {
+                loading.style.display = 'none';
+            }
+        }
+
+        async function generateReport() {
+            const outputDiv = document.getElementById('testOutput');
+            outputDiv.innerHTML = 'Generating report...';
+
+            try {
+                const response = await fetch('/generate-report', {
+                    method: 'POST'
+                });
+
+                const data = await response.json();
+                outputDiv.innerHTML = `Report generation ${data.status}<br>Path: ${data.reportPath}`;
+            } catch (error) {
+                outputDiv.innerHTML = `Error generating report: ${error.message}`;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+{
+"urls": [
+        {
+            "name": "Homepage",
+            "url": "https://g4s-v1.runmytests.eu/en"
+        },
+        {
+            "name": "Search Jobs",
+            "url": "https://g4s-v1.runmytests.eu/en/search-jobs"
+        },
+        {
+            "name": "Sitemap",
+            "url": "https://g4s-v1.runmytests.eu/en/sitemap"
+        },
+        {
+            "name": "Culture",
+            "url": "https://g4s-v1.runmytests.eu/en/culture-and-belonging"
+        },
+        {
+            "name": "Security Services",
+            "url": "https://g4s-v1.runmytests.eu/en/security-services"
+        }
+    ],
+"websiteURL" : "https://g4s-v1.runmytests.eu/en",
+"searchJOB" : "https://g4s-v1.runmytests.eu/en/search-jobs",
+"sitemap" : "https://g4s-v1.runmytests.eu/en/sitemap",
+"validSearch" : [
+    { "searchkeyword" : "Sales", "searchlocation" : "Uni", "expectedLocation" : "United Kingdom"},
+    { "searchkeyword" : "Manager", "searchlocation": "Ind", "expectedLocation" : "India"},
+    {"searchkeyword" : "Engineer", "searchlocation": "Sin", "expectedLocation" : "Singapore"}
+],
+"inValidsearch" : [
+    { "inValidSearch" : "LoNDon"},
+    { "inValidSearch" : "123456"},
+    { "inValidSearch" : "@#$%^&*()"}
+],
+"invalidsearchloc1" : "32arctic",
+"invalidsearchloc2" : "123445",
+"sitemapText" : "Sitemap",
+"locerrorMsg" : "Please try again.",
+"noresultsMessage" : "Please try a different keyword/location combination or broaden your search criteria.",
+"selectors" :{
+    "cookieAcceptbutton": "#onetrust-accept-btn-handler",
+    "searchKeyword": ".search-keyword",
+    "searchLocation": "input.search-location",
+    "locDropdown" : "[aria-labelledby*='search-location']",
+    "searchButton": "[data-last-action='search-submit']",
+    "errorLoc" : "p[aria-hidden='false']",
+     "siteMap": "[href='/sitemap']",
+     "searchresultHeader" : "span.search-results__header",
+     "noResultLocator": "#no-results",
+     "jobListing" : "li.job-list-tile__item",
+     "saveJobButton" : "button[aria-pressed='false']",
+     "savedJobButton" : "section li button[aria-pressed='true']",
+     "savedJobLink" : "div .btn--brand3"
+}
+}

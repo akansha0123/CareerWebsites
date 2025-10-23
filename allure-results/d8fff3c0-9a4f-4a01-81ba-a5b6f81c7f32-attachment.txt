@@ -1,0 +1,5 @@
+Setting up test for: https://careers.unilever.com/diversity-and-inclusion
+✅ Cookie banner accepted using: #onetrust-accept-btn-handler
+Testing Diversity and Inclusion
+Meta Title :  Equity, Diversity & Inclusion
+Meta Description : At Unilever, our ambition is to build equitable workplaces and to achieve equity, diversity and inclusion in everything we do.

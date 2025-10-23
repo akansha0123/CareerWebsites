@@ -1,0 +1,4 @@
+Setting up test for: https://careers.unilever.com/working-at-unilever
+✅ Cookie banner accepted using: #onetrust-accept-btn-handler
+ℹ️ No cookie banner found
+✅ No placeholder content found on https://careers.unilever.com/working-at-unilever
